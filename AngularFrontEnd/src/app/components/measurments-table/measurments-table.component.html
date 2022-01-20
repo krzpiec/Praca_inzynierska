@@ -1,0 +1,23 @@
+<p-table #ResultsTable [value]="measurmentsResults" [rowHover]="true" [paginator]="true" [rows]="5" [globalFilterFields]="['measurment.mac', 'measurment.channelNumber']" >
+
+  <ng-template pTemplate="header">
+      <tr class="ListHeaders">
+        <th>Mac address </th>
+        <th>Channel Number</th>
+        <th>Reading</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-measurment>
+      <tr class="p-selectable-row content-row">
+        <td>
+          {{measurment.mac}}
+      </td>
+      <td>
+        {{measurment.channelNumber}}
+        </td>
+        <td>
+          {{measurment.reading}}
+          </td>
+      </tr>
+  </ng-template>
+</p-table>

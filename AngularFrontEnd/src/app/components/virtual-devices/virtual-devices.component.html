@@ -1,0 +1,50 @@
+<div class="my-card">
+  <p-table #virtualDevicesTable [value]="virtualObjectList" [rowHover]="true" [paginator]="true" [rows]="5" [globalFilterFields]="['mac', 'channelNumber', 'desiredType']">
+    <ng-template pTemplate="caption">
+      <div class="table-header" >
+          <span class="p-input-icon-right">
+
+              <input class = "input-search" pInputText type="text" (input)="virtualDevicesTable.filterGlobal($any($event.target).value, 'contains')"  />
+              <i class="pi pi-search"></i>
+          </span>
+          <button routerLink="/virtualDevices/add" pButton type="button" class="add-button" label="Add new Virtual Device" >
+          </button>
+      </div>
+      </ng-template>
+    <ng-template pTemplate="header">
+        <tr class="ListHeaders">
+          <th class="header-field" [ngStyle]="{'width': '15%'}" pSortableColumn="mac">Mac adress<p-sortIcon field="mac"></p-sortIcon></th>
+          <th class="header-field" [ngStyle]="{'width': '16%'}"pSortableColumn="channelNumber">Channel num<p-sortIcon field="channelNumber"></p-sortIcon></th>
+          <th class="header-field" pSortableColumn="localizationDto.longitude">Longitude<p-sortIcon field="localizationDto.longitude"></p-sortIcon></th>
+          <th class="header-field" pSortableColumn="localizationDto.latitude">Latitude<p-sortIcon field="localizationDto.latitude"></p-sortIcon></th>
+          <th class="header-field" [ngStyle]="{'width': '16%'}"pSortableColumn="desiredType">Desired type<p-sortIcon field="desiredType"></p-sortIcon></th>
+          <th style="text-align: center" [ngStyle]="{'width': '10%'}">  </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-vo>
+        <tr class="p-selectable-row content-row">
+          <td>
+            {{vo.mac}}
+        </td>
+        <td>
+          {{vo.channelNumber}}
+      </td>
+      <td>
+        {{vo.localizationDto.latitude}}
+      </td>
+      <td>
+        {{vo.localizationDto.longitude}}
+      </td>
+      <td>
+        {{vo.desiredType}}
+      </td>
+      <td style="text-align: center">
+        <button [routerLink]="['/virtualDevices/', vo.mac, vo.channelNumber ]" pButton type="button" class="settings-button" icon="pi pi-cog"></button>
+    </td>
+        </tr>
+    </ng-template>
+
+
+  </p-table>
+
+  </div>

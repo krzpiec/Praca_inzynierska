@@ -1,0 +1,12 @@
+.table-header
+ {
+  background-color: rgb(238, 96, 2) ;
+  color:black;
+}
+:host ::ng-deep .p-datatable-wrapper{
+
+}
+.p-table-container{
+  border-radius: 15px;
+  overflow: hidden;
+}

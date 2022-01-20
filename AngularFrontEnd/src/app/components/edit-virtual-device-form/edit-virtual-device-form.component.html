@@ -1,0 +1,107 @@
+<div class="my-card">
+  <div class="container">
+    <form #addDeviceForm="ngForm" (ngSubmit)="onSubmit()" novalidate >
+      <div class="form-group">
+        <label for="macAdr" style="color: #ffffff;">Mac address</label>
+        <input
+        required
+        #macAdr = "ngModel"
+        [(ngModel)]="virtualObjectDto.mac"
+        [class.is-invalid]="macAdr.invalid && macAdr.touched"
+        name ="macAdr"
+        id="macAdr"
+        type="text"
+        [readonly]="true"
+        class="form-control">
+
+      </div>
+      <small class="text-danger" [class.d-none]="macAdr.valid || macAdr.untouched">MAC address is required</small> <div class="form-group">
+
+
+        <label for="channelNumber" style="color: #ffffff;">Channel number</label>
+        <input
+        required
+        #channelNumber="ngModel"
+        [(ngModel)]="virtualObjectDto.channelNumber"
+        [class.is-invalid]="channelNumber.invalid && channelNumber.touched"
+        name ="channelNumber"
+        id="channelNumber"
+        type="number"
+        [readonly]="true"
+        class="form-control">
+
+      </div>
+      <small class="text-danger" [class.d-none]="channelNumber.valid || channelNumber.untouched">Channel number is required</small>
+
+
+
+      <div class="form-group">
+        <label for="desiredType" style="color: #ffffff;">Desired type</label>
+        <input
+        required
+        #desiredType="ngModel"
+        [(ngModel)]="virtualObjectDto.desiredType"
+        [class.is-invalid]="desiredType.invalid && desiredType.touched"
+        name ="desiredType"
+        id="desiredType"
+        type="text"
+        [readonly]="true"
+        class="form-control">
+      </div>
+      <small class="text-danger" [class.d-none]="desiredType.valid || desiredType.untouched">Unit is required</small>
+
+
+
+      <div class="form-group">
+        <label for="Localization description" style="color: #ffffff;">Localization description</label>
+        <input
+        required
+        #localizationDescription="ngModel"
+        [(ngModel)]="virtualObjectDto.localizationDto.description"
+        [class.is-invalid]="localizationDescription.invalid && localizationDescription.touched"
+        name ="Localization description"
+        id="Localization description"
+        type="text"
+        class="form-control">
+      </div>
+      <small class="text-danger" [class.d-none]="localizationDescription.valid || localizationDescription.untouched">Description is required</small>
+
+
+      <div class="form-group">
+        <label for="latitude" style="color: #ffffff;">Latitude</label>
+        <input
+        required
+        #latitude="ngModel"
+        [(ngModel)]="virtualObjectDto.localizationDto.latitude"
+        [class.is-invalid]="latitude.invalid && latitude.touched"
+        name ="latitude"
+        id="latitude"
+        type="number"
+        step = "0.000001"
+        class="form-control">
+      </div>
+      <small class="text-danger" [class.d-none]="latitude.valid || latitude.untouched">Latitude is required</small>
+
+
+      <div class="form-group">
+        <label for="longitude" style="color: #ffffff;">Longitude</label>
+        <input
+        required
+        #longitude="ngModel"
+        [(ngModel)]="virtualObjectDto.localizationDto.longitude"
+        [class.is-invalid]="longitude.invalid && longitude.touched"
+        name ="longitude"
+        id="longitude"
+        type="number"
+        step = "0.000001"
+        class="form-control">
+      </div>
+      <small class="text-danger" [class.d-none]="longitude.valid || longitude.untouched">Longitude is required</small>
+      <hr>
+      <button class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+
+
+</div>

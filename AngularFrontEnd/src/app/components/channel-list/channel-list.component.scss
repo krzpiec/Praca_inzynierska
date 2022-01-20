@@ -1,0 +1,86 @@
+
+:host ::ng-deep .sorting-field{
+    margin: auto !important;
+}
+
+:host ::ng-deep .content-row{
+  background-color: #282828;
+}
+
+.content-row:hover{
+  background-color: rgb(253, 147, 76) !important;
+}
+
+.header-field:hover{
+  background-color: rgb(253, 147, 76) !important;
+}
+
+.ListHeaders th{
+  background-color: rgb(238, 96, 2) ;
+  text-align: center !important;
+  color: #282828;
+}
+
+:host ::ng-deep .p-sortIcon{
+  color: black;
+}
+
+:host ::ng-deep .p-datatable-wrapper{
+  border-width: 0px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.my-card{
+  max-width: 1000px !important;
+  margin: auto !important;
+  padding-top: 3vw;
+}
+.table-header {
+  background-color: #282828 !important;
+  display: flex;
+  justify-content: space-around;
+  border-width: 1px;
+}
+:host ::ng-deep .p-datatable-header{
+  background-color: #282828 !important;
+  border: none !important;
+}
+:host ::ng-deep tr td{
+  text-align: center !important;
+}
+:host ::ng-deep .p-datatable {
+  background: #282828 !important;
+  border-width: 0px !important;
+}
+
+:host ::ng-deep .p-sortIcon {
+  background: black !important;
+ color: #282828 !important;
+}
+.settings-button{
+  text-align: center;
+  background: none;
+  border: none;
+  color: rgb(68, 245, 216);
+
+}
+.add-button{
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: 1px solid rgb(253, 147, 76);
+  border-radius: 15px;
+  color: rgb(68, 245, 216);
+  width: 300px;
+}
+
+.input-search{
+  background-color: #494848;
+  width: 300px;
+}
+
+:host ::ng-deep .p-input-icon-right{
+  color: black !important;
+
+}

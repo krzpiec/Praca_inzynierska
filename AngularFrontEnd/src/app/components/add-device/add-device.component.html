@@ -1,0 +1,45 @@
+<div class="container">
+  <form #addDeviceForm="ngForm" (ngSubmit)="onSubmit()" novalidate >
+    <div class="form-group">
+      <label for="macAdr" style="color:#ffffff">Mac address</label>
+      <input
+      required
+      #macAdr = "ngModel"
+      [(ngModel)]="deviceDescriptionDto.macAdr"
+      [class.is-invalid]="macAdr.invalid && macAdr.touched"
+      name ="macAdr"
+      id="macAdr"
+      type="text"
+      class="form-control">
+    </div>
+    <small class="text-danger" [class.d-none]="macAdr.valid || macAdr.untouched">MAC address is required</small>
+    <div class="form-group">
+      <label for="description" style="color:#ffffff">Description</label>
+      <input
+      required
+      #description="ngModel"
+      [(ngModel)]="deviceDescriptionDto.description"
+      [class.is-invalid]="description.invalid && description.touched"
+      name ="description"
+      id="description"
+      type="text"
+      class="form-control">
+    </div>
+    <small class="text-danger" [class.d-none]="description.valid || description.untouched">Description is required</small>
+    <div class="form-group">
+      <label for="friendlyName" style="color:#ffffff">Friendly name</label>
+      <input
+      required
+      #friendlyName = "ngModel"
+      [(ngModel)]="deviceDescriptionDto.friendlyName"
+      [class.is-invalid]="friendlyName.invalid && friendlyName.touched"
+      name ="friendlyName"
+      id="friendlyName"
+      type="text"
+      class="form-control">
+    </div>
+    <small class="text-danger" [class.d-none]="friendlyName.valid || friendlyName.untouched">Friendly name is required</small>
+    <hr>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</div>

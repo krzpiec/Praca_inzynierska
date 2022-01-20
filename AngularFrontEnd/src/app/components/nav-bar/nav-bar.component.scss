@@ -1,0 +1,10 @@
+:host ::ng-deep .my-nav{
+  background-color: rgb(238, 96, 2)!important;
+  font-size: large;
+  font-weight: 600 !important;
+  font-family: "Rubik", "Courier New", monospace;
+}
+
+:host ::ng-deep a{
+  color : #282828!important ;
+}

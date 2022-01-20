@@ -1,0 +1,34 @@
+
+<div class="card">
+  <p-tabView styleClass="tabview-custom">
+      <p-tabPanel>
+          <ng-template pTemplate = "header">
+            <i class="fas fa-info"></i>
+              <span>Device description</span>
+
+          </ng-template>
+          <div class="my-card">
+          <app-device-description-list  [deviceDto] = "deviceDto"></app-device-description-list>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Header II">
+          <ng-template pTemplate = "header">
+            <i class="fas fa-plug"></i>
+              <span>Channels</span>
+
+          </ng-template>
+        <div class="my-card">
+          <app-channel-list [deviceDto]="deviceDto"></app-channel-list>
+        </div>
+      </p-tabPanel>
+  </p-tabView>
+  </div>
+
+<div class="main-container">
+  <div class="container">
+
+
+
+
+</div>
+</div>

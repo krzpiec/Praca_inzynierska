@@ -1,0 +1,17 @@
+.container{
+  max-width: 1000px !important;
+  margin: auto !important;
+  padding-top: 5vw;
+}
+:host ::ng-deep .form-control{
+  background-color: #282828 !important;
+  color: #ffffff !important;
+  border-radius: 15px;
+  border: 1px solid rgb(238, 96, 2);
+}
+:host ::ng-deep .custom-select{
+  background: #282828;
+  border-radius: 15px;
+  border: 1px solid rgb(238, 96, 2);
+  color: #ffffff !important;
+}

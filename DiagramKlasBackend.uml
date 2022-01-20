@@ -1,0 +1,2984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/piecz/Desktop/inzynierka/Java-IoT-Backend/src/main/java/polsl/pl/IoTBE</OriginalElement>
+  <nodes>
+    <node x="2041.0" y="5132.0">polsl.pl.IoTBE.IoTbeApplication</node>
+    <node x="11354.104166666666" y="4126.0">polsl.pl.IoTBE.config.VirtualChannelConfig</node>
+    <node x="2346.999999999999" y="1262.5">polsl.pl.IoTBE.repository.TermometerRepository</node>
+    <node x="10017.354166666666" y="3758.0">polsl.pl.IoTBE.common.ChannelTypes</node>
+    <node x="6562.794745746324" y="2902.0">polsl.pl.IoTBE.rest.dto.DeviceDescriptionDto</node>
+    <node x="1906.499999999999" y="647.5">polsl.pl.IoTBE.repository.dao.Termometer</node>
+    <node x="7517.153514114487" y="2203.0">polsl.pl.IoTBE.storage.Dbloader</node>
+    <node x="1429.999999999999" y="4653.5">polsl.pl.IoTBE.service.VirtualObjectService</node>
+    <node x="6187.794745746324" y="4138.5">polsl.pl.IoTBE.exceptions.TopicAlreadySubscribedException</node>
+    <node x="8821.479166666666" y="4653.5">polsl.pl.IoTBE.service.DeviceService</node>
+    <node x="1748.499999999999" y="1273.5">polsl.pl.IoTBE.repository.TemperatureHistoryRepository</node>
+    <node x="2082.0865767594673" y="2203.0">polsl.pl.IoTBE.rest.dto.LocalizationDto</node>
+    <node x="6480.794745746324" y="4113.5">polsl.pl.IoTBE.exceptions.InvalidConfigException</node>
+    <node x="6836.1875" y="4939.0">polsl.pl.IoTBE.rest.DeviceController</node>
+    <node x="931.4999999999991" y="2836.0">polsl.pl.IoTBE.rest.dto.VirtualSensorInitDto</node>
+    <node x="5374.419745746324" y="4035.0">polsl.pl.IoTBE.responseComminicates.DeviceDtoResponse</node>
+    <node x="248.5" y="4551.5">polsl.pl.IoTBE.rest.dto.VirtualObjectInitDto</node>
+    <node x="8288.378079079657" y="2212.5">polsl.pl.IoTBE.message.handler.MqttMessageHandler</node>
+    <node x="5356.0" y="2924.0">polsl.pl.IoTBE.rest.dto.ChannelDto</node>
+    <node x="210.0" y="5188.5">polsl.pl.IoTBE.service.CalculationService</node>
+    <node x="7816.578731631837" y="2594.0">polsl.pl.IoTBE.storage.StorageMenager</node>
+    <node x="6772.794745746324" y="2924.0">polsl.pl.IoTBE.mqtt.MqttSubscriberConfig</node>
+    <node x="1444.0" y="5286.0">polsl.pl.IoTBE.events.MeasurementDonePublisher</node>
+    <node x="10.5" y="4595.5">polsl.pl.IoTBE.responseComminicates.MessageResponse</node>
+    <node x="1035.5743474478195" y="4116.5">polsl.pl.IoTBE.mapper.VirtualObjectMapper</node>
+    <node x="10376.50400232019" y="1770.5">polsl.pl.IoTBE.common.RTreeConfigValues</node>
+    <node x="2857.266231631837" y="3747.0">polsl.pl.IoTBE.validators.NewVirtualObjectValidator</node>
+    <node x="5647.419745746324" y="3667.0">polsl.pl.IoTBE.rest.dto.DeviceDto</node>
+    <node x="9412.104166666666" y="1770.5">polsl.pl.IoTBE.common.MqttConfigValues</node>
+    <node x="6967.311576759468" y="647.5">polsl.pl.IoTBE.repository.dao.Device</node>
+    <node x="2121.7739124129907" y="0.0">polsl.pl.IoTBE.repository.dao.Localization</node>
+    <node x="765.0" y="5421.0">polsl.pl.IoTBE.repository.TestRepository</node>
+    <node x="12450.729166666666" y="4573.5">polsl.pl.IoTBE.responseComminicates.ResponseMessageAndList</node>
+    <node x="2514.173912412991" y="1601.0">polsl.pl.IoTBE.domain.VirtualTermometer</node>
+    <node x="2282.72456496517" y="2902.0">polsl.pl.IoTBE.rest.dto.TermometerDescriptionDto</node>
+    <node x="12220.479166666666" y="4069.5">polsl.pl.IoTBE.responseComminicates.MeasurmentResults</node>
+    <node x="10478.628079079659" y="679.0">polsl.pl.IoTBE.RTree.RecordList</node>
+    <node x="4406.273912412991" y="4113.5">polsl.pl.IoTBE.exceptions.InvalidTypeForChannelException</node>
+    <node x="766.5" y="5132.0">polsl.pl.IoTBE.repository.dao.TestEntity</node>
+    <node x="1720.0" y="5132.0">polsl.pl.IoTBE.mqtt.MqttPublisherConfig</node>
+    <node x="1268.0" y="5132.0">polsl.pl.IoTBE.events.MeasurementDoneEvent</node>
+    <node x="1152.499999999999" y="3747.0">polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator</node>
+    <node x="5699.044745746324" y="4024.0">polsl.pl.IoTBE.exceptions.DevicePresentException</node>
+    <node x="692.5" y="2814.0">polsl.pl.IoTBE.rest.dto.VirtualSensorDto</node>
+    <node x="2347.0865767594673" y="2204.5">polsl.pl.IoTBE.rest.Controller</node>
+    <node x="453.5" y="4531.0">polsl.pl.IoTBE.rest.dto.EditVirtualObjectDto</node>
+    <node x="5195.357245746324" y="4609.5">polsl.pl.IoTBE.mapper.DeviceMapperDecorator</node>
+    <node x="3321.2739124129907" y="1240.5">polsl.pl.IoTBE.repository.DeviceRepository</node>
+    <node x="10770.50400232019" y="1714.0">polsl.pl.IoTBE.RTree.RTreeFactory</node>
+    <node x="2281.173912412991" y="1770.5">polsl.pl.IoTBE.repository.LocalizationRepository</node>
+    <node x="11327.604166666666" y="4642.5">polsl.pl.IoTBE.rest.PublishController</node>
+    <node x="5965.794745746324" y="4046.0">polsl.pl.IoTBE.exceptions.InvalidMacException</node>
+    <node x="3202.09956496517" y="4113.5">polsl.pl.IoTBE.exceptions.ChannelTakenException</node>
+    <node x="9040.854166666666" y="2969.5">polsl.pl.IoTBE.mqtt.ConfigHandler</node>
+    <node x="997.0" y="5286.0">polsl.pl.IoTBE.events.MeasurementDoneEventHandler</node>
+    <node x="7581.628079079657" y="1770.5">polsl.pl.IoTBE.exceptions.InvalidMqttMessageException</node>
+    <node x="4894.357245746324" y="4138.5">polsl.pl.IoTBE.exceptions.WrongPayloadException</node>
+    <node x="7973.103243426134" y="4138.5">polsl.pl.IoTBE.mapper.ChannelMapper</node>
+    <node x="10808.50400232019" y="1250.0">polsl.pl.IoTBE.RTree.SupportedMyRTreeNodeTypes</node>
+    <node x="6806.294745746324" y="4094.5">polsl.pl.IoTBE.mapper.DeviceMapper</node>
+    <node x="1913.7739124129912" y="0.0">polsl.pl.IoTBE.repository.dao.TemperatureHistory</node>
+    <node x="7436.828731631837" y="569.0">polsl.pl.IoTBE.domain.VirtualObject</node>
+    <node x="5171.882680781153" y="45.5">polsl.pl.IoTBE.repository.dao.Channel</node>
+    <node x="12183.87900232019" y="4962.5">polsl.pl.IoTBE.RTree.RTreeController</node>
+    <node x="129.0" y="5506.0">polsl.pl.IoTBE.rest.CalculationController</node>
+    <node x="548.0" y="5242.0">polsl.pl.IoTBE.rest.dto.calculationDataDto</node>
+    <node x="3571.2739124129907" y="1236.0">polsl.pl.IoTBE.TestingRtree.MyRTreeNode</node>
+    <node x="4592.357245746324" y="4543.5">polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler</node>
+    <node x="2600.016231631837" y="2924.0">polsl.pl.IoTBE.rest.dto.TemperatureHistoryDto</node>
+    <node x="3792.2739124129907" y="4138.5">polsl.pl.IoTBE.exceptions.NoDeviceWithGivenMacException</node>
+    <node x="11669.604166666666" y="690.0">polsl.pl.IoTBE.RTree.Record</node>
+    <node x="11944.729166666666" y="4576.5">polsl.pl.IoTBE.RTree.RTreeService</node>
+    <node x="4085.2739124129907" y="4091.5">polsl.pl.IoTBE.exceptions.NoChannelForGivenMacException</node>
+    <node x="7853.628079079657" y="1273.5">polsl.pl.IoTBE.message.channel.TempSensor</node>
+    <node x="2249.624999999999" y="3667.0">polsl.pl.IoTBE.rest.dto.TermometerDto</node>
+    <node x="145.75324342613385" y="4917.0">polsl.pl.IoTBE.rest.VirtualObjectController</node>
+    <node x="10459.37900232019" y="1214.0">polsl.pl.IoTBE.RTree.MyRTreeNode</node>
+    <node x="8510.878079079657" y="88.0">polsl.pl.IoTBE.message.channel.VirtualChannel</node>
+    <node x="10027.229166666666" y="2148.0">polsl.pl.IoTBE.RTree.RTreeManager</node>
+    <node x="9176.479166666666" y="4113.5">polsl.pl.IoTBE.exceptions.NoResponseFromSensorException</node>
+    <node x="10140.50400232019" y="1747.0">polsl.pl.IoTBE.mqtt.MqttController</node>
+    <node x="9276.854166666666" y="2226.5">polsl.pl.IoTBE.message.channel.TempSensorChannel</node>
+    <node x="2014.4199100928" y="2903.5">polsl.pl.IoTBE.rest.dto.VirtualObjectDto</node>
+    <node x="10144.00400232019" y="1273.5">polsl.pl.IoTBE.mqtt.MqttGateway</node>
+    <node x="5916.294745746324" y="1251.5">polsl.pl.IoTBE.repository.ChannelRepository</node>
+    <node x="10567.50400232019" y="1747.0">polsl.pl.IoTBE.RTree.TreeTypes</node>
+    <node x="0.0" y="5132.0">polsl.pl.IoTBE.rest.dto.CalculationResultsDto</node>
+    <node x="3269.266231631837" y="3678.0">polsl.pl.IoTBE.responseComminicates.VirtualObjectDtoResponse</node>
+    <node x="9591.854166666666" y="4115.0">polsl.pl.IoTBE.validators.NewDeviceValidator</node>
+    <node x="11150.104166666666" y="4068.0">polsl.pl.IoTBE.rest.dto.PublishMessageDto</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="671.0" y="4886.0" />
+      <point x="671.0" y="3635.0" />
+      <point x="1390.499999999999" y="3635.0" />
+      <point x="1390.499999999999" y="3545.0" />
+      <point x="2068.9199100928" y="3545.0" />
+      <point x="-54.5" y="140.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.TemperatureHistoryRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1509.0" />
+      <point x="1908.2662316318365" y="1509.0" />
+      <point x="1908.2662316318365" y="1499.0" />
+      <point x="1822.249999999999" y="1499.0" />
+      <point x="-73.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.WrongPayloadException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="5005.357245746324" y="4349.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDescriptionDto" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="DEPENDENCY">
+      <point x="56.5" y="-141.5" />
+      <point x="2452.22456496517" y="2562.0" />
+      <point x="2250.4199100928004" y="2562.0" />
+      <point x="2250.4199100928004" y="2552.0" />
+      <point x="2286.253243426134" y="2552.0" />
+      <point x="81.66666666666674" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.ConfigHandler" target="polsl.pl.IoTBE.common.MqttConfigValues" relationship="DEPENDENCY">
+      <point x="111.66666666666674" y="-74.0" />
+      <point x="9320.020833333332" y="2572.0" />
+      <point x="9219.354166666666" y="2572.0" />
+      <point x="9219.354166666666" y="2522.0" />
+      <point x="9266.354166666666" y="2522.0" />
+      <point x="9266.354166666666" y="2096.0" />
+      <point x="9495.604166666666" y="2096.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.responseComminicates.MeasurmentResults" relationship="CREATE">
+      <point x="161.66666666666663" y="-116.5" />
+      <point x="12348.895833333332" y="4509.0" />
+      <point x="12264.479166666666" y="4509.0" />
+      <point x="-44.0" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.events.MeasurementDonePublisher" target="polsl.pl.IoTBE.events.MeasurementDoneEvent" relationship="CREATE">
+      <point x="0.0" y="-39.5" />
+      <point x="1559.5" y="5261.0" />
+      <point x="1443.5" y="5261.0" />
+      <point x="58.5" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1449.0" />
+      <point x="2252.499999999999" y="1449.0" />
+      <point x="2252.499999999999" y="1172.0" />
+      <point x="3699.445180781153" y="1172.0" />
+      <point x="3699.445180781153" y="1082.0" />
+      <point x="2134.499999999999" y="1082.0" />
+      <point x="76.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="CREATE">
+      <point x="-167.66666666666652" y="-94.5" />
+      <point x="2430.919910092801" y="2126.0" />
+      <point x="1710.749999999999" y="2126.0" />
+      <point x="1710.749999999999" y="488.0" />
+      <point x="5236.716014114486" y="488.0" />
+      <point x="5236.716014114486" y="368.0" />
+      <point x="5251.882680781153" y="368.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.RTree.TreeTypes" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="10256.229166666666" y="2076.0" />
+      <point x="10613.25400232019" y="2076.0" />
+      <point x="-45.75" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8245.878079079657" y="2482.0" />
+      <point x="8245.878079079657" y="498.0" />
+      <point x="2317.2576807811533" y="498.0" />
+      <point x="2317.257680781153" y="368.0" />
+      <point x="2213.7739124129907" y="368.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="TO_ONE">
+      <point x="-54.5" y="-140.0" />
+      <point x="2068.9199100928" y="2572.0" />
+      <point x="2240.4199100928004" y="2572.0" />
+      <point x="2240.4199100928004" y="2552.0" />
+      <point x="2204.5865767594673" y="2552.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.MyRTreeNode" target="polsl.pl.IoTBE.RTree.Record" relationship="DEPENDENCY">
+      <point x="-1.4210854715202004E-14" y="-86.5" />
+      <point x="10577.37900232019" y="1192.0" />
+      <point x="10611.712335653523" y="1192.0" />
+      <point x="10611.712335653523" y="1142.0" />
+      <point x="11715.604166666666" y="1142.0" />
+      <point x="-46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.validators.NewDeviceValidator" target="polsl.pl.IoTBE.common.MqttConfigValues" relationship="DEPENDENCY">
+      <point x="0.0" y="-50.5" />
+      <point x="9724.854166666666" y="2096.0" />
+      <point x="9495.604166666666" y="2096.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="5184.857245746324" y="4876.0" />
+      <point x="5184.857245746324" y="1409.0" />
+      <point x="3493.7739124129907" y="1409.0" />
+      <point x="57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.responseComminicates.VirtualObjectDtoResponse" target="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" relationship="DEPENDENCY">
+      <point x="-79.25" y="-130.5" />
+      <point x="3348.516231631837" y="3635.0" />
+      <point x="1390.499999999999" y="3635.0" />
+      <point x="1390.499999999999" y="3545.0" />
+      <point x="2068.9199100928" y="3545.0" />
+      <point x="-54.5" y="140.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.CalculationController" target="polsl.pl.IoTBE.rest.dto.calculationDataDto" relationship="DEPENDENCY">
+      <point x="156.66666666666663" y="-39.5" />
+      <point x="520.6666666666666" y="5486.0" />
+      <point x="466.7045454545455" y="5486.0" />
+      <point x="466.7045454545455" y="5476.0" />
+      <point x="634.0" y="5476.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="TO_ONE">
+      <point x="186.39999999999998" y="-196.5" />
+      <point x="2933.573912412991" y="1579.0" />
+      <point x="2884.999999999999" y="1579.0" />
+      <point x="2884.999999999999" y="1499.0" />
+      <point x="6177.294745746324" y="1499.0" />
+      <point x="87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="TO_ONE">
+      <point x="123.0" y="-96.0" />
+      <point x="7824.653514114487" y="2126.0" />
+      <point x="8204.378079079657" y="2126.0" />
+      <point x="8204.378079079657" y="1559.0" />
+      <point x="5174.857245746324" y="1559.0" />
+      <point x="5174.857245746324" y="1439.0" />
+      <point x="2579.499999999999" y="1439.0" />
+      <point x="77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.dao.TemperatureHistory" relationship="CREATE">
+      <point x="-167.66666666666652" y="-94.5" />
+      <point x="2430.919910092801" y="2126.0" />
+      <point x="1710.749999999999" y="2126.0" />
+      <point x="1710.749999999999" y="528.0" />
+      <point x="1751.0162316318365" y="528.0" />
+      <point x="1751.0162316318365" y="348.0" />
+      <point x="2007.7739124129912" y="348.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="11864.104166666666" y="4339.0" />
+      <point x="11864.104166666666" y="468.0" />
+      <point x="8644.878079079657" y="468.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.exceptions.NoDeviceWithGivenMacException" relationship="CREATE">
+      <point x="-132.33333333333348" y="-39.5" />
+      <point x="1496.166666666666" y="4509.0" />
+      <point x="1138.4239124129908" y="4509.0" />
+      <point x="1138.4239124129908" y="4499.0" />
+      <point x="3860.2739124129907" y="4499.0" />
+      <point x="-68.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="CREATE">
+      <point x="-151.66666666666652" y="-61.5" />
+      <point x="1228.3333333333321" y="3645.0" />
+      <point x="1349.7410141144865" y="3645.0" />
+      <point x="1349.7410141144865" y="3615.0" />
+      <point x="1333.9910141144865" y="3615.0" />
+      <point x="1333.9910141144865" y="2076.0" />
+      <point x="1422.499999999999" y="2076.0" />
+      <point x="1422.499999999999" y="548.0" />
+      <point x="1438.5162316318365" y="548.0" />
+      <point x="1438.5162316318365" y="368.0" />
+      <point x="2152.4405790796573" y="368.0" />
+      <point x="-61.33333333333337" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.storage.Dbloader" relationship="TO_ONE">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2492.0" />
+      <point x="7609.403514114487" y="2492.0" />
+      <point x="-92.25" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.LocalizationRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="2598.5865767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2096.0" />
+      <point x="2119.4615767594673" y="2096.0" />
+      <point x="2119.4615767594673" y="2036.0" />
+      <point x="2334.173912412991" y="2036.0" />
+      <point x="-53.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.common.MqttConfigValues" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="2096.0" />
+      <point x="9495.604166666666" y="2096.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="2066.0" />
+      <point x="9113.854166666666" y="2066.0" />
+      <point x="9113.854166666666" y="1549.0" />
+      <point x="2742.749999999999" y="1549.0" />
+      <point x="2742.749999999999" y="1419.0" />
+      <point x="6003.294745746324" y="1419.0" />
+      <point x="-87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDto" target="polsl.pl.IoTBE.rest.dto.TemperatureHistoryDto" relationship="DEPENDENCY">
+      <point x="85.75" y="-141.5" />
+      <point x="2506.874999999999" y="3645.0" />
+      <point x="2751.516231631837" y="3645.0" />
+      <point x="50.5" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.responseComminicates.DeviceDtoResponse" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="DEPENDENCY">
+      <point x="62.5" y="-130.5" />
+      <point x="5561.919745746324" y="3992.0" />
+      <point x="5834.295668986856" y="3992.0" />
+      <point x="5834.295668986856" y="3972.0" />
+      <point x="5846.169745746324" y="3972.0" />
+      <point x="66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapper" target="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" relationship="DEPENDENCY">
+      <point x="-151.66666666666652" y="-49.0" />
+      <point x="1111.4076807811525" y="4002.0" />
+      <point x="1071.8243474478195" y="4002.0" />
+      <point x="1071.8243474478195" y="3992.0" />
+      <point x="1228.3333333333321" y="3992.0" />
+      <point x="-151.66666666666652" y="61.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.TopicAlreadySubscribedException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="6255.794745746324" y="4349.0" />
+      <point x="-68.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="TO_ONE">
+      <point x="186.39999999999998" y="-196.5" />
+      <point x="2933.573912412991" y="1579.0" />
+      <point x="2884.999999999999" y="1579.0" />
+      <point x="2884.999999999999" y="1479.0" />
+      <point x="5174.857245746324" y="1479.0" />
+      <point x="5174.857245746324" y="1439.0" />
+      <point x="2579.499999999999" y="1439.0" />
+      <point x="77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.RTree.TreeTypes" relationship="TO_MANY">
+      <point x="152.66666666666652" y="-151.0" />
+      <point x="10408.895833333332" y="2126.0" />
+      <point x="10912.070180781153" y="2126.0" />
+      <point x="10912.070180781153" y="2036.0" />
+      <point x="10704.75400232019" y="2036.0" />
+      <point x="45.75" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="4339.0" />
+      <point x="9878.854166666666" y="4339.0" />
+      <point x="9878.854166666666" y="1519.0" />
+      <point x="5184.857245746324" y="1519.0" />
+      <point x="5184.857245746324" y="1409.0" />
+      <point x="3493.7739124129907" y="1409.0" />
+      <point x="57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.channel.TempSensorChannel" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.5" />
+      <point x="9423.854166666666" y="2056.0" />
+      <point x="9640.354166666666" y="2056.0" />
+      <point x="9640.354166666666" y="458.0" />
+      <point x="8734.211412412991" y="458.0" />
+      <point x="89.33333333333331" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.LocalizationDto" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="2204.5865767594673" y="2066.0" />
+      <point x="1661.249999999999" y="2066.0" />
+      <point x="1661.249999999999" y="1082.0" />
+      <point x="1677.749999999999" y="1082.0" />
+      <point x="1677.749999999999" y="498.0" />
+      <point x="2317.257680781153" y="498.0" />
+      <point x="2317.257680781153" y="368.0" />
+      <point x="2213.7739124129907" y="368.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapper" target="polsl.pl.IoTBE.rest.dto.DeviceDescriptionDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-71.0" />
+      <point x="7015.794745746324" y="3645.0" />
+      <point x="6705.294745746324" y="3645.0" />
+      <point x="47.5" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.service.VirtualObjectService" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="1727.749999999999" y="4876.0" />
+      <point x="99.25" y="39.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.mapper.ChannelMapper" relationship="TO_ONE">
+      <point x="157.125" y="-83.5" />
+      <point x="5561.982245746324" y="4489.0" />
+      <point x="8109.603243426134" y="4489.0" />
+      <point x="8109.603243426134" y="4469.0" />
+      <point x="8119.603243426134" y="4469.0" />
+      <point x="8119.603243426134" y="4339.0" />
+      <point x="8185.353243426134" y="4339.0" />
+      <point x="70.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.LocalizationRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="2086.0" />
+      <point x="2119.4615767594673" y="2086.0" />
+      <point x="2119.4615767594673" y="2036.0" />
+      <point x="2334.173912412991" y="2036.0" />
+      <point x="-53.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.validators.NewDeviceValidator" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4479.0" />
+      <point x="9658.354166666666" y="4479.0" />
+      <point x="-66.5" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeController" target="polsl.pl.IoTBE.RTree.RTreeService" relationship="DEPENDENCY">
+      <point x="-197.33333333333348" y="-39.5" />
+      <point x="12282.545668986855" y="4896.0" />
+      <point x="12253.104166666666" y="4896.0" />
+      <point x="12253.104166666666" y="4886.0" />
+      <point x="12065.979166666666" y="4886.0" />
+      <point x="-121.25" y="116.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.mapper.VirtualObjectMapper" relationship="TO_ONE">
+      <point x="132.33333333333326" y="-39.5" />
+      <point x="1760.8333333333321" y="4509.0" />
+      <point x="4538.273912412991" y="4509.0" />
+      <point x="4538.273912412991" y="4499.0" />
+      <point x="4533.273912412991" y="4499.0" />
+      <point x="4533.273912412991" y="4469.0" />
+      <point x="1376.8243474478195" y="4469.0" />
+      <point x="113.75" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="4339.0" />
+      <point x="10922.070180781153" y="4339.0" />
+      <point x="10922.070180781153" y="2086.0" />
+      <point x="11217.920668986855" y="2086.0" />
+      <point x="11217.920668986855" y="2046.0" />
+      <point x="10302.50400232019" y="2046.0" />
+      <point x="54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.TestingRtree.MyRTreeNode" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-50.0" y="-64.5" />
+      <point x="3621.2739124129907" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="216.0" y="4886.0" />
+      <point x="216.0" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.handler.MqttMessageHandler" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="DEPENDENCY">
+      <point x="-59.0" y="-86.5" />
+      <point x="8347.378079079657" y="2126.0" />
+      <point x="8256.878079079657" y="2126.0" />
+      <point x="8256.878079079657" y="468.0" />
+      <point x="8644.878079079657" y="468.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.TestRepository" target="polsl.pl.IoTBE.repository.dao.TestEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.DeviceDto" target="polsl.pl.IoTBE.rest.dto.DeviceDescriptionDto" relationship="DEPENDENCY">
+      <point x="66.25" y="-141.5" />
+      <point x="5846.169745746324" y="3645.0" />
+      <point x="5730.820180781153" y="3645.0" />
+      <point x="5730.820180781153" y="3585.0" />
+      <point x="6705.294745746324" y="3585.0" />
+      <point x="47.5" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.common.MqttConfigValues" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8578.653514114487" y="2482.0" />
+      <point x="8578.653514114487" y="2096.0" />
+      <point x="9495.604166666666" y="2096.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.TemperatureHistoryRepository" target="polsl.pl.IoTBE.repository.dao.TemperatureHistory" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="1895.999999999999" y="538.0" />
+      <point x="1583.5162316318365" y="538.0" />
+      <point x="1583.5162316318365" y="358.0" />
+      <point x="1945.1072457463242" y="358.0" />
+      <point x="-62.666666666666686" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualObject" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="DEPENDENCY">
+      <point x="95.0" y="-240.5" />
+      <point x="7721.828731631837" y="548.0" />
+      <point x="7647.061576759467" y="548.0" />
+      <point x="7647.061576759467" y="378.0" />
+      <point x="2317.257680781153" y="378.0" />
+      <point x="2317.257680781153" y="368.0" />
+      <point x="2213.7739124129907" y="368.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="TO_ONE">
+      <point x="167.66666666666652" y="-94.5" />
+      <point x="2766.253243426134" y="2126.0" />
+      <point x="2933.766231631837" y="2126.0" />
+      <point x="2933.766231631837" y="2026.0" />
+      <point x="2990.673912412991" y="2026.0" />
+      <point x="2990.673912412991" y="1519.0" />
+      <point x="5184.857245746324" y="1519.0" />
+      <point x="5184.857245746324" y="1409.0" />
+      <point x="3493.7739124129907" y="1409.0" />
+      <point x="57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="2598.5865767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2036.0" />
+      <point x="1923.7662316318365" y="2036.0" />
+      <point x="1923.7662316318365" y="1459.0" />
+      <point x="2424.499999999999" y="1459.0" />
+      <point x="-77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.message.handler.MqttMessageHandler" relationship="TO_ONE">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2502.0" />
+      <point x="7619.403514114487" y="2502.0" />
+      <point x="7619.403514114487" y="2492.0" />
+      <point x="8347.378079079657" y="2492.0" />
+      <point x="-59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.validators.NewVirtualObjectValidator" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="1628.499999999999" y="4459.0" />
+      <point x="1818.2532434261338" y="4459.0" />
+      <point x="1818.2532434261338" y="4002.0" />
+      <point x="2955.266231631837" y="4002.0" />
+      <point x="-98.0" y="61.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.handler.MqttMessageHandler" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="-59.0" y="86.5" />
+      <point x="8347.378079079657" y="2492.0" />
+      <point x="7619.403514114487" y="2492.0" />
+      <point x="7619.403514114487" y="2502.0" />
+      <point x="7485.903514114487" y="2502.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="-352.33333333333326" y="-449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.RTree.SupportedMyRTreeNodeTypes" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8534.878079079657" y="2482.0" />
+      <point x="8534.878079079657" y="1509.0" />
+      <point x="10954.50400232019" y="1509.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.TermometerRepository" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.0" />
+      <point x="2501.999999999999" y="1192.0" />
+      <point x="3699.445180781153" y="1192.0" />
+      <point x="3699.445180781153" y="1112.0" />
+      <point x="3709.945180781153" y="1112.0" />
+      <point x="3709.945180781153" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1519.0" />
+      <point x="2732.249999999999" y="1519.0" />
+      <point x="2732.249999999999" y="1429.0" />
+      <point x="3378.7739124129907" y="1429.0" />
+      <point x="-57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.handler.MqttMessageHandler" target="polsl.pl.IoTBE.exceptions.InvalidMqttMessageException" relationship="CREATE">
+      <point x="59.0" y="-86.5" />
+      <point x="8465.378079079657" y="2046.0" />
+      <point x="8267.378079079657" y="2046.0" />
+      <point x="8267.378079079657" y="2026.0" />
+      <point x="7769.878079079657" y="2026.0" />
+      <point x="62.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8277.878079079657" y="2482.0" />
+      <point x="8277.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapper" target="polsl.pl.IoTBE.domain.VirtualTermometer" relationship="DEPENDENCY">
+      <point x="-151.66666666666652" y="-49.0" />
+      <point x="1111.4076807811525" y="4002.0" />
+      <point x="1071.8243474478195" y="4002.0" />
+      <point x="1071.8243474478195" y="3992.0" />
+      <point x="1125.999999999999" y="3992.0" />
+      <point x="1125.999999999999" y="2126.0" />
+      <point x="1285.3243474478195" y="2126.0" />
+      <point x="1285.3243474478195" y="2046.0" />
+      <point x="2630.673912412991" y="2046.0" />
+      <point x="-116.5" y="196.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.rest.dto.DeviceDescriptionDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="7036.6875" y="4886.0" />
+      <point x="6705.294745746324" y="4886.0" />
+      <point x="47.5" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.domain.VirtualTermometer" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="2126.0" />
+      <point x="1285.3243474478195" y="2126.0" />
+      <point x="1285.3243474478195" y="2046.0" />
+      <point x="2630.673912412991" y="2046.0" />
+      <point x="-116.5" y="196.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.RTree.MyRTreeNode" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="1489.0" />
+      <point x="10964.50400232019" y="1489.0" />
+      <point x="10964.50400232019" y="1479.0" />
+      <point x="10636.37900232019" y="1479.0" />
+      <point x="59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.dao.TemperatureHistory" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="216.0" y="4886.0" />
+      <point x="216.0" y="538.0" />
+      <point x="1583.5162316318365" y="538.0" />
+      <point x="1583.5162316318365" y="358.0" />
+      <point x="1945.1072457463242" y="358.0" />
+      <point x="-62.666666666666686" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="132.33333333333326" y="-39.5" />
+      <point x="1760.8333333333321" y="4509.0" />
+      <point x="4538.273912412991" y="4509.0" />
+      <point x="4538.273912412991" y="4339.0" />
+      <point x="4680.773912412991" y="4339.0" />
+      <point x="4680.773912412991" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="2076.0" />
+      <point x="9113.854166666666" y="2076.0" />
+      <point x="9113.854166666666" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.RTree.RTreeManager" relationship="TO_ONE">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2542.0" />
+      <point x="10261.229166666666" y="2542.0" />
+      <point x="10261.229166666666" y="2502.0" />
+      <point x="10370.729166666666" y="2502.0" />
+      <point x="114.5" y="151.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="2106.0" />
+      <point x="10119.50400232019" y="2106.0" />
+      <point x="10119.50400232019" y="2066.0" />
+      <point x="10194.50400232019" y="2066.0" />
+      <point x="-54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.MyRTreeNode" target="polsl.pl.IoTBE.RTree.RecordList" relationship="TO_ONE">
+      <point x="-78.66666666666669" y="-86.5" />
+      <point x="10498.712335653523" y="1192.0" />
+      <point x="10550.628079079659" y="1192.0" />
+      <point x="10550.628079079659" y="1122.0" />
+      <point x="10509.294745746325" y="1122.0" />
+      <point x="-61.333333333333314" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.ChannelTakenException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="3450.34956496517" y="4349.0" />
+      <point x="82.75" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.rest.dto.VirtualSensorDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="1379.999999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3575.0" />
+      <point x="801.5" y="3575.0" />
+      <point x="0.0" y="229.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Termometer" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="-76.0" y="-162.0" />
+      <point x="1982.499999999999" y="518.0" />
+      <point x="2231.999999999999" y="518.0" />
+      <point x="2231.999999999999" y="428.0" />
+      <point x="8098.878079079657" y="428.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.LocalizationRepository" relationship="TO_ONE">
+      <point x="123.0" y="-96.0" />
+      <point x="7824.653514114487" y="2126.0" />
+      <point x="8204.378079079657" y="2126.0" />
+      <point x="8204.378079079657" y="2046.0" />
+      <point x="3001.173912412991" y="2046.0" />
+      <point x="3001.173912412991" y="2016.0" />
+      <point x="2440.173912412991" y="2016.0" />
+      <point x="53.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Termometer" target="polsl.pl.IoTBE.repository.dao.TemperatureHistory" relationship="DEPENDENCY">
+      <point x="-76.0" y="-162.0" />
+      <point x="1982.499999999999" y="518.0" />
+      <point x="2231.999999999999" y="518.0" />
+      <point x="2231.999999999999" y="388.0" />
+      <point x="1583.5162316318365" y="388.0" />
+      <point x="1583.5162316318365" y="358.0" />
+      <point x="1945.1072457463242" y="358.0" />
+      <point x="-62.666666666666686" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.TemperatureHistory" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="DEPENDENCY">
+      <point x="-62.66666666666697" y="163.5" />
+      <point x="1945.1072457463242" y="358.0" />
+      <point x="1583.5162316318365" y="358.0" />
+      <point x="1583.5162316318365" y="388.0" />
+      <point x="2231.999999999999" y="388.0" />
+      <point x="2231.999999999999" y="518.0" />
+      <point x="1982.499999999999" y="518.0" />
+      <point x="-76.0" y="-162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.MyRTreeNode" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-1.4210854715202004E-14" y="-86.5" />
+      <point x="10577.37900232019" y="1192.0" />
+      <point x="10611.712335653523" y="1192.0" />
+      <point x="10611.712335653523" y="1112.0" />
+      <point x="7685.16206496517" y="1112.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDto" target="polsl.pl.IoTBE.rest.dto.TemperatureHistoryDto" relationship="TO_MANY">
+      <point x="-85.75" y="-141.5" />
+      <point x="2335.374999999999" y="3645.0" />
+      <point x="2442.22456496517" y="3645.0" />
+      <point x="2442.22456496517" y="3515.0" />
+      <point x="2650.516231631837" y="3515.0" />
+      <point x="-50.5" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.mapper.ChannelMapper" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4369.0" />
+      <point x="8109.603243426134" y="4369.0" />
+      <point x="8109.603243426134" y="4329.0" />
+      <point x="8043.853243426134" y="4329.0" />
+      <point x="-70.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="TO_ONE">
+      <point x="96.75" y="-50.5" />
+      <point x="11617.854166666666" y="4509.0" />
+      <point x="11875.104166666666" y="4509.0" />
+      <point x="11875.104166666666" y="4499.0" />
+      <point x="11923.229166666666" y="4499.0" />
+      <point x="11923.229166666666" y="2086.0" />
+      <point x="11217.920668986855" y="2086.0" />
+      <point x="11217.920668986855" y="2046.0" />
+      <point x="10302.50400232019" y="2046.0" />
+      <point x="54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1499.0" />
+      <point x="1923.7662316318365" y="1499.0" />
+      <point x="1923.7662316318365" y="1459.0" />
+      <point x="2424.499999999999" y="1459.0" />
+      <point x="-77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.validators.NewVirtualObjectValidator" relationship="TO_ONE">
+      <point x="132.33333333333326" y="-39.5" />
+      <point x="1760.8333333333321" y="4509.0" />
+      <point x="4538.273912412991" y="4509.0" />
+      <point x="4538.273912412991" y="4339.0" />
+      <point x="4395.773912412991" y="4339.0" />
+      <point x="4395.773912412991" y="3982.0" />
+      <point x="3151.266231631837" y="3982.0" />
+      <point x="98.0" y="61.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.rest.dto.VirtualSensorInitDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="443.0" y="4886.0" />
+      <point x="443.0" y="3615.0" />
+      <point x="1023.4999999999991" y="3615.0" />
+      <point x="0.0" y="207.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="671.0" y="4886.0" />
+      <point x="671.0" y="3625.0" />
+      <point x="8383.854166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.responseComminicates.MessageResponse" relationship="CREATE">
+      <point x="-179.0" y="-85.0" />
+      <point x="235.25324342613385" y="4896.0" />
+      <point x="102.5" y="4896.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.mapper.DeviceMapper" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="4379.0" />
+      <point x="8099.603243426134" y="4379.0" />
+      <point x="8099.603243426134" y="4339.0" />
+      <point x="7155.461412412991" y="4339.0" />
+      <point x="139.66666666666652" y="71.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeController" target="polsl.pl.IoTBE.responseComminicates.ResponseMessageAndList" relationship="CREATE">
+      <point x="197.33333333333348" y="-39.5" />
+      <point x="12677.212335653523" y="4896.0" />
+      <point x="12582.729166666666" y="4896.0" />
+      <point x="0.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.ConfigHandler" target="polsl.pl.IoTBE.message.handler.MqttMessageHandler" relationship="TO_ONE">
+      <point x="-111.66666666666674" y="-74.0" />
+      <point x="9096.6875" y="2562.0" />
+      <point x="7619.403514114487" y="2562.0" />
+      <point x="7619.403514114487" y="2492.0" />
+      <point x="8347.378079079657" y="2492.0" />
+      <point x="-59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.responseComminicates.DeviceDtoResponse" relationship="CREATE">
+      <point x="-133.66666666666652" y="-63.0" />
+      <point x="6903.020833333333" y="4896.0" />
+      <point x="6081.669745746324" y="4896.0" />
+      <point x="6081.669745746324" y="4499.0" />
+      <point x="5499.419745746324" y="4499.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8578.653514114487" y="2482.0" />
+      <point x="8578.653514114487" y="2106.0" />
+      <point x="10119.50400232019" y="2106.0" />
+      <point x="10119.50400232019" y="2066.0" />
+      <point x="10194.50400232019" y="2066.0" />
+      <point x="-54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.RTree.Record" relationship="CREATE">
+      <point x="161.66666666666663" y="-116.5" />
+      <point x="12348.895833333332" y="4509.0" />
+      <point x="12264.479166666666" y="4509.0" />
+      <point x="12264.479166666666" y="4349.0" />
+      <point x="12406.979166666666" y="4349.0" />
+      <point x="12406.979166666666" y="1082.0" />
+      <point x="11807.604166666666" y="1082.0" />
+      <point x="46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="7036.6875" y="4886.0" />
+      <point x="7235.794745746324" y="4886.0" />
+      <point x="7235.794745746324" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.exceptions.InvalidTypeForChannelException" relationship="CREATE">
+      <point x="-132.33333333333348" y="-39.5" />
+      <point x="1496.166666666666" y="4509.0" />
+      <point x="1138.4239124129908" y="4509.0" />
+      <point x="1138.4239124129908" y="4499.0" />
+      <point x="4472.273912412991" y="4499.0" />
+      <point x="-66.0" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.responseComminicates.DeviceDtoResponse" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="TO_ONE">
+      <point x="-62.5" y="-130.5" />
+      <point x="5436.919745746324" y="4002.0" />
+      <point x="5678.544745746324" y="4002.0" />
+      <point x="5678.544745746324" y="3982.0" />
+      <point x="5713.669745746324" y="3982.0" />
+      <point x="-66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Termometer" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="DEPENDENCY">
+      <point x="-76.0" y="-162.0" />
+      <point x="1982.499999999999" y="518.0" />
+      <point x="2231.999999999999" y="518.0" />
+      <point x="2231.999999999999" y="398.0" />
+      <point x="2317.257680781153" y="398.0" />
+      <point x="2317.257680781153" y="368.0" />
+      <point x="2213.7739124129907" y="368.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.InvalidMacException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="6016.044745746324" y="4349.0" />
+      <point x="-50.25" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.exceptions.InvalidConfigException" relationship="CREATE">
+      <point x="-63.333333333333485" y="-39.5" />
+      <point x="8853.145833333332" y="4509.0" />
+      <point x="9019.854166666666" y="4509.0" />
+      <point x="9019.854166666666" y="4409.0" />
+      <point x="6641.294745746324" y="4409.0" />
+      <point x="53.5" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.NoChannelForGivenMacException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="4310.273912412991" y="4349.0" />
+      <point x="75.0" y="74.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.message.channel.TempSensorChannel" relationship="CREATE">
+      <point x="352.33333333333326" y="-449.5" />
+      <point x="8697.41206496517" y="2552.0" />
+      <point x="9423.854166666666" y="2552.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.dao.TemperatureHistory" relationship="CREATE">
+      <point x="-186.39999999999992" y="-196.5" />
+      <point x="2560.7739124129907" y="1489.0" />
+      <point x="2220.999999999999" y="1489.0" />
+      <point x="2220.999999999999" y="528.0" />
+      <point x="1751.0162316318365" y="528.0" />
+      <point x="1751.0162316318365" y="348.0" />
+      <point x="2007.7739124129912" y="348.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.ConfigHandler" target="polsl.pl.IoTBE.exceptions.InvalidMqttMessageException" relationship="CREATE">
+      <point x="0.0" y="-74.0" />
+      <point x="9208.354166666666" y="2522.0" />
+      <point x="9191.854166666666" y="2522.0" />
+      <point x="9191.854166666666" y="2046.0" />
+      <point x="8267.378079079657" y="2046.0" />
+      <point x="8267.378079079657" y="2026.0" />
+      <point x="7769.878079079657" y="2026.0" />
+      <point x="62.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="TO_MANY">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2492.0" />
+      <point x="7506.653514114487" y="2492.0" />
+      <point x="7506.653514114487" y="1142.0" />
+      <point x="7695.16206496517" y="1142.0" />
+      <point x="7695.16206496517" y="1102.0" />
+      <point x="7753.495398298504" y="1102.0" />
+      <point x="126.66666666666674" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.validators.NewVirtualObjectValidator" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="98.0" y="-61.5" />
+      <point x="3151.266231631837" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.mapper.DeviceMapper" relationship="TO_ONE">
+      <point x="133.66666666666652" y="-63.0" />
+      <point x="7170.354166666666" y="4896.0" />
+      <point x="9021.979166666666" y="4896.0" />
+      <point x="9021.979166666666" y="4399.0" />
+      <point x="8099.603243426134" y="4399.0" />
+      <point x="8099.603243426134" y="4339.0" />
+      <point x="7155.461412412991" y="4339.0" />
+      <point x="139.66666666666652" y="71.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.responseComminicates.VirtualObjectDtoResponse" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="4873.357245746324" y="4349.0" />
+      <point x="4873.357245746324" y="3972.0" />
+      <point x="3533.4328982985035" y="3972.0" />
+      <point x="105.66666666666652" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.ChannelMapper" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="8114.603243426134" y="3635.0" />
+      <point x="6451.9375" y="3635.0" />
+      <point x="6451.9375" y="3545.0" />
+      <point x="5494.0" y="3545.0" />
+      <point x="46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="96.75" y="-50.5" />
+      <point x="11617.854166666666" y="4509.0" />
+      <point x="11875.104166666666" y="4509.0" />
+      <point x="11875.104166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDto" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="TO_ONE">
+      <point x="-85.75" y="-141.5" />
+      <point x="2335.374999999999" y="3645.0" />
+      <point x="2442.22456496517" y="3645.0" />
+      <point x="2442.22456496517" y="3545.0" />
+      <point x="5402.0" y="3545.0" />
+      <point x="-46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="11631.604166666666" y="4339.0" />
+      <point x="11631.604166666666" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.RTree.RTreeManager" relationship="TO_ONE">
+      <point x="2.8421709430404007E-14" y="-116.5" />
+      <point x="12187.229166666666" y="2512.0" />
+      <point x="10261.229166666666" y="2512.0" />
+      <point x="10261.229166666666" y="2502.0" />
+      <point x="10370.729166666666" y="2502.0" />
+      <point x="114.5" y="151.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.TermometerRepository" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.0" />
+      <point x="2501.999999999999" y="1192.0" />
+      <point x="3699.445180781153" y="1192.0" />
+      <point x="3699.445180781153" y="1082.0" />
+      <point x="2134.499999999999" y="1082.0" />
+      <point x="76.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.config.VirtualChannelConfig" target="polsl.pl.IoTBE.common.ChannelTypes" relationship="DEPENDENCY">
+      <point x="-66.75" y="-39.5" />
+      <point x="11420.854166666666" y="3992.0" />
+      <point x="10118.354166666666" y="3992.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.service.VirtualObjectService" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="1529.249999999999" y="4886.0" />
+      <point x="-99.25" y="39.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.mapper.VirtualObjectMapper" relationship="REALIZATION">
+      <point x="0.0" y="61.5" />
+      <point x="1379.999999999999" y="4002.0" />
+      <point x="1263.0743474478195" y="4002.0" />
+      <point x="0.0" y="-49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="10933.070180781153" y="4339.0" />
+      <point x="10933.070180781153" y="2106.0" />
+      <point x="10119.50400232019" y="2106.0" />
+      <point x="10119.50400232019" y="2066.0" />
+      <point x="10194.50400232019" y="2066.0" />
+      <point x="-54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.exceptions.TopicAlreadySubscribedException" relationship="CREATE">
+      <point x="-63.333333333333485" y="-39.5" />
+      <point x="8853.145833333332" y="4509.0" />
+      <point x="9019.854166666666" y="4509.0" />
+      <point x="9019.854166666666" y="4409.0" />
+      <point x="6391.794745746324" y="4409.0" />
+      <point x="68.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1449.0" />
+      <point x="2252.499999999999" y="1449.0" />
+      <point x="2252.499999999999" y="498.0" />
+      <point x="2317.257680781153" y="498.0" />
+      <point x="2317.257680781153" y="368.0" />
+      <point x="2213.7739124129907" y="368.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.exceptions.ChannelTakenException" relationship="CREATE">
+      <point x="-132.33333333333348" y="-39.5" />
+      <point x="1496.166666666666" y="4509.0" />
+      <point x="1138.4239124129908" y="4509.0" />
+      <point x="1138.4239124129908" y="4499.0" />
+      <point x="3284.84956496517" y="4499.0" />
+      <point x="-82.75" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.MyRTreeNode" target="polsl.pl.IoTBE.RTree.RecordList" relationship="CREATE">
+      <point x="78.66666666666669" y="-86.5" />
+      <point x="10656.045668986855" y="1102.0" />
+      <point x="10570.628079079659" y="1102.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.mapper.ChannelMapper" relationship="TO_ONE">
+      <point x="96.75" y="-50.5" />
+      <point x="11617.854166666666" y="4509.0" />
+      <point x="11875.104166666666" y="4509.0" />
+      <point x="11875.104166666666" y="4359.0" />
+      <point x="8119.603243426134" y="4359.0" />
+      <point x="8119.603243426134" y="4339.0" />
+      <point x="8185.353243426134" y="4339.0" />
+      <point x="70.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.MqttSubscriberConfig" target="polsl.pl.IoTBE.message.handler.MqttMessageHandler" relationship="TO_ONE">
+      <point x="-80.75" y="-119.5" />
+      <point x="6853.544745746324" y="2562.0" />
+      <point x="7619.403514114487" y="2562.0" />
+      <point x="7619.403514114487" y="2492.0" />
+      <point x="8347.378079079657" y="2492.0" />
+      <point x="-59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="1152.0" />
+      <point x="7685.162064965171" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.ConfigHandler" target="polsl.pl.IoTBE.message.handler.MqttMessageHandler" relationship="DEPENDENCY">
+      <point x="111.66666666666674" y="-74.0" />
+      <point x="9320.020833333332" y="2572.0" />
+      <point x="9219.354166666666" y="2572.0" />
+      <point x="9219.354166666666" y="2502.0" />
+      <point x="8658.354166666666" y="2502.0" />
+      <point x="8658.354166666666" y="2472.0" />
+      <point x="8465.378079079657" y="2472.0" />
+      <point x="59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="7558.403514114487" y="2036.0" />
+      <point x="7558.403514114487" y="1539.0" />
+      <point x="2732.2499999999995" y="1539.0" />
+      <point x="2732.249999999999" y="1429.0" />
+      <point x="3378.7739124129907" y="1429.0" />
+      <point x="-57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.VirtualSensorDto" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="DEPENDENCY">
+      <point x="54.5" y="-229.5" />
+      <point x="856.0" y="2562.0" />
+      <point x="2250.4199100928004" y="2562.0" />
+      <point x="2250.4199100928004" y="2552.0" />
+      <point x="2286.253243426134" y="2552.0" />
+      <point x="81.66666666666674" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.channel.TempSensorChannel" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="TO_ONE">
+      <point x="98.0" y="-72.5" />
+      <point x="9521.854166666666" y="2086.0" />
+      <point x="11217.920668986855" y="2086.0" />
+      <point x="11217.920668986855" y="2046.0" />
+      <point x="10302.50400232019" y="2046.0" />
+      <point x="54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.rest.dto.VirtualSensorDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="3605.0" />
+      <point x="801.5" y="3605.0" />
+      <point x="0.0" y="229.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1529.0" />
+      <point x="2742.749999999999" y="1529.0" />
+      <point x="2742.749999999999" y="1419.0" />
+      <point x="6003.294745746324" y="1419.0" />
+      <point x="-87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.mapper.DeviceMapper" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="7036.6875" y="4886.0" />
+      <point x="7015.794745746324" y="4886.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="CREATE">
+      <point x="-167.66666666666652" y="-94.5" />
+      <point x="2430.919910092801" y="2126.0" />
+      <point x="1710.749999999999" y="2126.0" />
+      <point x="1710.749999999999" y="2076.0" />
+      <point x="1688.749999999999" y="2076.0" />
+      <point x="1688.749999999999" y="548.0" />
+      <point x="1438.5162316318365" y="548.0" />
+      <point x="1438.5162316318365" y="368.0" />
+      <point x="2152.4405790796573" y="368.0" />
+      <point x="-61.33333333333337" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="8193.378079079657" y="2036.0" />
+      <point x="8193.378079079657" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.mapper.VirtualObjectMapper" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="671.0" y="4886.0" />
+      <point x="671.0" y="4489.0" />
+      <point x="1149.3243474478195" y="4489.0" />
+      <point x="-113.75" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="1539.0" />
+      <point x="2732.249999999999" y="1539.0" />
+      <point x="2732.249999999999" y="1429.0" />
+      <point x="3378.7739124129907" y="1429.0" />
+      <point x="-57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualObject" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="TO_ONE">
+      <point x="-95.0" y="-240.5" />
+      <point x="7531.828731631837" y="548.0" />
+      <point x="7365.170668986856" y="548.0" />
+      <point x="7365.170668986856" y="388.0" />
+      <point x="4534.966014114487" y="388.0" />
+      <point x="4534.966014114487" y="358.0" />
+      <point x="2275.107245746324" y="358.0" />
+      <point x="61.33333333333337" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.DeviceDto" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="TO_MANY">
+      <point x="-66.25" y="-141.5" />
+      <point x="5713.669745746324" y="3645.0" />
+      <point x="5407.0" y="3645.0" />
+      <point x="5407.0" y="3535.0" />
+      <point x="5402.0" y="3535.0" />
+      <point x="-46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.storage.Dbloader" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="7793.903514114487" y="2482.0" />
+      <point x="92.25" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.DeviceRepository" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-60.0" />
+      <point x="3436.2739124129907" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="TO_ONE">
+      <point x="123.0" y="-96.0" />
+      <point x="7824.653514114487" y="2126.0" />
+      <point x="8204.378079079657" y="2126.0" />
+      <point x="8204.378079079657" y="1519.0" />
+      <point x="5184.857245746324" y="1519.0" />
+      <point x="5184.857245746324" y="1409.0" />
+      <point x="3493.7739124129907" y="1409.0" />
+      <point x="57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.ChannelRepository" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.0" />
+      <point x="6090.294745746324" y="1112.0" />
+      <point x="5874.91206496517" y="1112.0" />
+      <point x="5874.91206496517" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.LocalizationRepository" relationship="TO_ONE">
+      <point x="167.66666666666652" y="-94.5" />
+      <point x="2766.253243426134" y="2126.0" />
+      <point x="2933.766231631837" y="2126.0" />
+      <point x="2933.766231631837" y="2116.0" />
+      <point x="3001.173912412991" y="2116.0" />
+      <point x="3001.173912412991" y="2016.0" />
+      <point x="2440.173912412991" y="2016.0" />
+      <point x="53.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.InvalidConfigException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="6534.294745746324" y="4349.0" />
+      <point x="-53.5" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="TO_ONE">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2492.0" />
+      <point x="7506.653514114487" y="2492.0" />
+      <point x="7506.653514114487" y="2086.0" />
+      <point x="11217.920668986855" y="2086.0" />
+      <point x="11217.920668986855" y="2046.0" />
+      <point x="10302.50400232019" y="2046.0" />
+      <point x="54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.RTree.RTreeManager" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="2522.0" />
+      <point x="10251.229166666666" y="2522.0" />
+      <point x="10251.229166666666" y="2512.0" />
+      <point x="10141.729166666666" y="2512.0" />
+      <point x="-114.5" y="151.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.TemperatureHistoryRepository" relationship="TO_ONE">
+      <point x="167.66666666666652" y="-94.5" />
+      <point x="2766.253243426134" y="2126.0" />
+      <point x="2933.766231631837" y="2126.0" />
+      <point x="2933.766231631837" y="2026.0" />
+      <point x="2130.4615767594673" y="2026.0" />
+      <point x="2130.4615767594673" y="1529.0" />
+      <point x="1945.7662316318365" y="1529.0" />
+      <point x="1945.7662316318365" y="1449.0" />
+      <point x="1969.749999999999" y="1449.0" />
+      <point x="73.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.common.MqttConfigValues" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="2096.0" />
+      <point x="9495.604166666666" y="2096.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeFactory" target="polsl.pl.IoTBE.RTree.SupportedMyRTreeNodeTypes" relationship="DEPENDENCY">
+      <point x="0.0" y="-83.5" />
+      <point x="10959.50400232019" y="1489.0" />
+      <point x="10954.50400232019" y="1489.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.dao.Device" relationship="CREATE">
+      <point x="-167.66666666666652" y="-94.5" />
+      <point x="2430.919910092801" y="2126.0" />
+      <point x="1710.749999999999" y="2126.0" />
+      <point x="1710.749999999999" y="1182.0" />
+      <point x="3530.5625" y="1182.0" />
+      <point x="3530.5625" y="1072.0" />
+      <point x="6996.311576759468" y="1072.0" />
+      <point x="-58.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="7571.128079079657" y="2036.0" />
+      <point x="7571.128079079657" y="1172.0" />
+      <point x="3699.445180781153" y="1172.0" />
+      <point x="3699.445180781153" y="1082.0" />
+      <point x="2134.499999999999" y="1082.0" />
+      <point x="76.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8245.878079079657" y="2482.0" />
+      <point x="8245.878079079657" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.DevicePresentException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="5759.794745746324" y="4349.0" />
+      <point x="-60.75" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.exceptions.DevicePresentException" relationship="CREATE">
+      <point x="-63.333333333333485" y="-39.5" />
+      <point x="8853.145833333332" y="4509.0" />
+      <point x="9019.854166666666" y="4509.0" />
+      <point x="9019.854166666666" y="4409.0" />
+      <point x="5881.294745746324" y="4409.0" />
+      <point x="60.75" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="7036.6875" y="4886.0" />
+      <point x="6705.294745746324" y="4886.0" />
+      <point x="6705.294745746324" y="3992.0" />
+      <point x="5834.295668986856" y="3992.0" />
+      <point x="5834.295668986856" y="3972.0" />
+      <point x="5846.169745746324" y="3972.0" />
+      <point x="66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="10256.229166666666" y="2056.0" />
+      <point x="10130.00400232019" y="2056.0" />
+      <point x="10130.00400232019" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.RTree.RTreeFactory" relationship="TO_ONE">
+      <point x="152.66666666666652" y="-151.0" />
+      <point x="10408.895833333332" y="2126.0" />
+      <point x="10912.070180781153" y="2126.0" />
+      <point x="10912.070180781153" y="2036.0" />
+      <point x="11054.00400232019" y="2036.0" />
+      <point x="94.5" y="83.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.message.handler.MqttMessageHandler" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2522.0" />
+      <point x="8658.354166666666" y="2522.0" />
+      <point x="8658.354166666666" y="2472.0" />
+      <point x="8465.378079079657" y="2472.0" />
+      <point x="59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.channel.TempSensorChannel" target="polsl.pl.IoTBE.message.channel.TempSensor" relationship="DEPENDENCY">
+      <point x="-98.0" y="-72.5" />
+      <point x="9325.854166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2036.0" />
+      <point x="9592.854166666666" y="2036.0" />
+      <point x="9592.854166666666" y="1499.0" />
+      <point x="8025.378079079657" y="1499.0" />
+      <point x="57.25" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.handler.MqttMessageHandler" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="59.0" y="86.5" />
+      <point x="8465.378079079657" y="2472.0" />
+      <point x="8658.354166666666" y="2472.0" />
+      <point x="8658.354166666666" y="2522.0" />
+      <point x="8345.078731631838" y="2522.0" />
+      <point x="0.0" y="-449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.DeviceDto" target="polsl.pl.IoTBE.rest.dto.DeviceDescriptionDto" relationship="TO_ONE">
+      <point x="-66.25" y="-141.5" />
+      <point x="5713.669745746324" y="3645.0" />
+      <point x="5407.0" y="3645.0" />
+      <point x="5407.0" y="3575.0" />
+      <point x="6610.294745746324" y="3575.0" />
+      <point x="-47.5" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="TO_ONE">
+      <point x="186.39999999999998" y="-196.5" />
+      <point x="2933.573912412991" y="1579.0" />
+      <point x="2884.999999999999" y="1579.0" />
+      <point x="2884.999999999999" y="1489.0" />
+      <point x="5184.857245746324" y="1489.0" />
+      <point x="5184.857245746324" y="1409.0" />
+      <point x="3493.7739124129907" y="1409.0" />
+      <point x="57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.TemperatureHistory" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="TO_ONE">
+      <point x="62.666666666666515" y="163.5" />
+      <point x="2070.4405790796577" y="378.0" />
+      <point x="2241.999999999999" y="378.0" />
+      <point x="2241.999999999999" y="508.0" />
+      <point x="2134.499999999999" y="508.0" />
+      <point x="76.0" y="-162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapper" target="polsl.pl.IoTBE.rest.dto.VirtualSensorInitDto" relationship="DEPENDENCY">
+      <point x="-151.66666666666652" y="-49.0" />
+      <point x="1111.4076807811525" y="4002.0" />
+      <point x="1071.8243474478195" y="4002.0" />
+      <point x="1071.8243474478195" y="3992.0" />
+      <point x="1023.4999999999991" y="3992.0" />
+      <point x="0.0" y="207.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.ChannelMapper" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="8114.603243426134" y="4002.0" />
+      <point x="8884.078731631838" y="4002.0" />
+      <point x="8884.078731631838" y="2076.0" />
+      <point x="8921.061576759468" y="2076.0" />
+      <point x="8921.061576759468" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="133.66666666666652" y="-63.0" />
+      <point x="7170.354166666666" y="4896.0" />
+      <point x="9021.979166666666" y="4896.0" />
+      <point x="9021.979166666666" y="4886.0" />
+      <point x="11934.229166666666" y="4886.0" />
+      <point x="11934.229166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.config.VirtualChannelConfig" target="polsl.pl.IoTBE.message.channel.TempSensorChannel" relationship="CREATE">
+      <point x="66.75" y="-39.5" />
+      <point x="11554.354166666666" y="4002.0" />
+      <point x="11492.604166666666" y="4002.0" />
+      <point x="11492.604166666666" y="2552.0" />
+      <point x="9423.854166666666" y="2552.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.DevicePresentException" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="DEPENDENCY">
+      <point x="60.75" y="-141.5" />
+      <point x="5881.294745746324" y="3992.0" />
+      <point x="5834.295668986856" y="3992.0" />
+      <point x="5834.295668986856" y="3972.0" />
+      <point x="5846.169745746324" y="3972.0" />
+      <point x="66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.repository.dao.Device" relationship="TO_MANY">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2492.0" />
+      <point x="7334.170668986856" y="2492.0" />
+      <point x="7334.170668986856" y="1122.0" />
+      <point x="7112.311576759468" y="1122.0" />
+      <point x="58.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.RTree.RTreeManager" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2532.0" />
+      <point x="10251.229166666666" y="2532.0" />
+      <point x="10251.229166666666" y="2512.0" />
+      <point x="10141.729166666666" y="2512.0" />
+      <point x="-114.5" y="151.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeController" target="polsl.pl.IoTBE.responseComminicates.MeasurmentResults" relationship="DEPENDENCY">
+      <point x="-197.33333333333348" y="-39.5" />
+      <point x="12282.545668986855" y="4896.0" />
+      <point x="12253.104166666666" y="4896.0" />
+      <point x="12253.104166666666" y="4886.0" />
+      <point x="12440.229166666666" y="4886.0" />
+      <point x="12440.229166666666" y="4499.0" />
+      <point x="12352.479166666666" y="4499.0" />
+      <point x="44.0" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="2598.5865767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2036.0" />
+      <point x="2108.4615767594673" y="2036.0" />
+      <point x="2108.4615767594673" y="1539.0" />
+      <point x="2732.249999999999" y="1539.0" />
+      <point x="2732.249999999999" y="1429.0" />
+      <point x="3378.7739124129907" y="1429.0" />
+      <point x="-57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.validators.NewDeviceValidator" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="4339.0" />
+      <point x="9791.354166666666" y="4339.0" />
+      <point x="66.5" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="TO_MANY">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2492.0" />
+      <point x="7375.670668986856" y="2492.0" />
+      <point x="7375.670668986856" y="448.0" />
+      <point x="8114.128079079657" y="448.0" />
+      <point x="8114.128079079657" y="428.0" />
+      <point x="8555.544745746323" y="428.0" />
+      <point x="-89.33333333333333" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.TestingRtree.MyRTreeNode" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="TO_ONE">
+      <point x="50.0" y="-64.5" />
+      <point x="3721.2739124129907" y="1142.0" />
+      <point x="7695.16206496517" y="1142.0" />
+      <point x="7695.16206496517" y="1102.0" />
+      <point x="7753.495398298504" y="1102.0" />
+      <point x="126.66666666666674" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.MqttSubscriberConfig" target="polsl.pl.IoTBE.message.handler.MqttMessageHandler" relationship="DEPENDENCY">
+      <point x="80.75" y="-119.5" />
+      <point x="7015.044745746324" y="2512.0" />
+      <point x="8658.354166666666" y="2512.0" />
+      <point x="8658.354166666666" y="2472.0" />
+      <point x="8465.378079079657" y="2472.0" />
+      <point x="59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.domain.VirtualTermometer" relationship="CREATE">
+      <point x="-123.0" y="-96.0" />
+      <point x="7578.653514114487" y="2066.0" />
+      <point x="2863.673912412991" y="2066.0" />
+      <point x="116.5" y="196.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.ChannelTakenException" target="polsl.pl.IoTBE.responseComminicates.VirtualObjectDtoResponse" relationship="TO_ONE">
+      <point x="110.33333333333326" y="-52.0" />
+      <point x="3477.9328982985035" y="4002.0" />
+      <point x="3427.766231631837" y="4002.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.mapper.VirtualObjectMapper" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="1628.499999999999" y="4479.0" />
+      <point x="1149.3243474478195" y="4479.0" />
+      <point x="-113.75" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.MqttController" target="polsl.pl.IoTBE.mqtt.MqttGateway" relationship="DEPENDENCY">
+      <point x="-54.0" y="-50.5" />
+      <point x="10194.50400232019" y="1489.0" />
+      <point x="10196.25400232019" y="1489.0" />
+      <point x="-52.25" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDto" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="DEPENDENCY">
+      <point x="85.75" y="-141.5" />
+      <point x="2506.874999999999" y="3645.0" />
+      <point x="2751.516231631837" y="3645.0" />
+      <point x="2751.516231631837" y="3555.0" />
+      <point x="6451.9375" y="3555.0" />
+      <point x="6451.9375" y="3545.0" />
+      <point x="5494.0" y="3545.0" />
+      <point x="46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="8093.128079079657" y="2036.0" />
+      <point x="8093.128079079657" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.channel.TempSensorChannel" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="DEPENDENCY">
+      <point x="-98.0" y="-72.5" />
+      <point x="9325.854166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2076.0" />
+      <point x="10119.50400232019" y="2076.0" />
+      <point x="10119.50400232019" y="2066.0" />
+      <point x="10194.50400232019" y="2066.0" />
+      <point x="-54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.mqtt.ConfigHandler" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="3605.0" />
+      <point x="9292.104166666666" y="3605.0" />
+      <point x="83.75" y="74.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.repository.dao.Device" relationship="CREATE">
+      <point x="-157.125" y="-83.5" />
+      <point x="5247.732245746324" y="4489.0" />
+      <point x="5237.607245746324" y="4489.0" />
+      <point x="5237.607245746324" y="1182.0" />
+      <point x="3530.5625" y="1182.0" />
+      <point x="3530.5625" y="1072.0" />
+      <point x="6996.311576759468" y="1072.0" />
+      <point x="-58.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="5710.257680781153" y="4876.0" />
+      <point x="5710.257680781153" y="4419.0" />
+      <point x="6177.294745746324" y="4419.0" />
+      <point x="87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.LocalizationRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2056.0" />
+      <point x="2119.4615767594673" y="2056.0" />
+      <point x="2119.4615767594673" y="2036.0" />
+      <point x="2334.173912412991" y="2036.0" />
+      <point x="-53.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Termometer" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="TO_ONE">
+      <point x="76.0" y="-162.0" />
+      <point x="2134.499999999999" y="508.0" />
+      <point x="2241.999999999999" y="508.0" />
+      <point x="2241.999999999999" y="408.0" />
+      <point x="2327.507680781153" y="408.0" />
+      <point x="2327.507680781153" y="348.0" />
+      <point x="5198.549347447819" y="348.0" />
+      <point x="-53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.VirtualSensorDto" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="TO_ONE">
+      <point x="-54.5" y="-229.5" />
+      <point x="747.0" y="2572.0" />
+      <point x="2240.4199100928004" y="2572.0" />
+      <point x="2240.4199100928004" y="2552.0" />
+      <point x="2204.5865767594673" y="2552.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.RTree.TreeTypes" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8578.653514114487" y="2482.0" />
+      <point x="8578.653514114487" y="2116.0" />
+      <point x="10613.25400232019" y="2116.0" />
+      <point x="-45.75" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="TO_ONE">
+      <point x="167.66666666666652" y="-94.5" />
+      <point x="2766.253243426134" y="2126.0" />
+      <point x="2933.766231631837" y="2126.0" />
+      <point x="2933.766231631837" y="2026.0" />
+      <point x="2503.673912412991" y="2026.0" />
+      <point x="2503.673912412991" y="1559.0" />
+      <point x="5174.857245746324" y="1559.0" />
+      <point x="5174.857245746324" y="1439.0" />
+      <point x="2579.499999999999" y="1439.0" />
+      <point x="77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="1628.499999999999" y="4459.0" />
+      <point x="4074.7739124129907" y="4459.0" />
+      <point x="4074.7739124129907" y="3625.0" />
+      <point x="8383.854166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.RTree.MyRTreeNode" relationship="CREATE">
+      <point x="-152.66666666666652" y="-151.0" />
+      <point x="10103.5625" y="2066.0" />
+      <point x="9999.104166666666" y="2066.0" />
+      <point x="9999.104166666666" y="1499.0" />
+      <point x="10518.37900232019" y="1499.0" />
+      <point x="-59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8534.878079079657" y="2482.0" />
+      <point x="8534.878079079657" y="468.0" />
+      <point x="8644.878079079657" y="468.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Device" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="43.5" y="-162.0" />
+      <point x="7097.811576759468" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Channel" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="53.333333333333485" y="118.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="7097.811576759468" y="478.0" />
+      <point x="43.5" y="-162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="10933.070180781153" y="4339.0" />
+      <point x="10933.070180781153" y="3635.0" />
+      <point x="6451.9375" y="3635.0" />
+      <point x="6451.9375" y="3545.0" />
+      <point x="5494.0" y="3545.0" />
+      <point x="46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4479.0" />
+      <point x="9581.354166666666" y="4479.0" />
+      <point x="9581.354166666666" y="2106.0" />
+      <point x="10119.50400232019" y="2106.0" />
+      <point x="10119.50400232019" y="2066.0" />
+      <point x="10194.50400232019" y="2066.0" />
+      <point x="-54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.mqtt.MqttController" relationship="TO_ONE">
+      <point x="2.8421709430404007E-14" y="-116.5" />
+      <point x="12187.229166666666" y="4339.0" />
+      <point x="12209.979166666666" y="4339.0" />
+      <point x="12209.979166666666" y="2086.0" />
+      <point x="11217.920668986855" y="2086.0" />
+      <point x="11217.920668986855" y="2046.0" />
+      <point x="10302.50400232019" y="2046.0" />
+      <point x="54.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.NoDeviceWithGivenMacException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="3996.2739124129907" y="4349.0" />
+      <point x="68.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.responseComminicates.DeviceDtoResponse" relationship="CREATE">
+      <point x="143.0" y="-149.5" />
+      <point x="5021.357245746324" y="4499.0" />
+      <point x="5499.419745746324" y="4499.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.LocalizationRepository" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="682.0" y="4876.0" />
+      <point x="682.0" y="2106.0" />
+      <point x="3001.173912412991" y="2106.0" />
+      <point x="3001.173912412991" y="2016.0" />
+      <point x="2440.173912412991" y="2016.0" />
+      <point x="53.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapper" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-71.0" />
+      <point x="7015.794745746324" y="3982.0" />
+      <point x="5834.295668986856" y="3982.0" />
+      <point x="5834.295668986856" y="3972.0" />
+      <point x="5846.169745746324" y="3972.0" />
+      <point x="66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.DeviceDto" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="DEPENDENCY">
+      <point x="66.25" y="-141.5" />
+      <point x="5846.169745746324" y="3645.0" />
+      <point x="5730.820180781153" y="3645.0" />
+      <point x="5730.820180781153" y="3565.0" />
+      <point x="6451.9375" y="3565.0" />
+      <point x="6451.9375" y="3545.0" />
+      <point x="5494.0" y="3545.0" />
+      <point x="46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.mapper.ChannelMapper" relationship="DEPENDENCY">
+      <point x="52.375" y="-83.5" />
+      <point x="5457.232245746324" y="4509.0" />
+      <point x="5779.919745746324" y="4509.0" />
+      <point x="5779.919745746324" y="4459.0" />
+      <point x="8109.603243426134" y="4459.0" />
+      <point x="8109.603243426134" y="4329.0" />
+      <point x="8043.853243426134" y="4329.0" />
+      <point x="-70.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.mapper.DeviceMapper" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4389.0" />
+      <point x="7015.794745746324" y="4389.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.mapper.DeviceMapper" relationship="TO_ONE">
+      <point x="157.125" y="-83.5" />
+      <point x="5561.982245746324" y="4489.0" />
+      <point x="8109.603243426134" y="4489.0" />
+      <point x="8109.603243426134" y="4449.0" />
+      <point x="8099.603243426134" y="4449.0" />
+      <point x="8099.603243426134" y="4339.0" />
+      <point x="7155.461412412991" y="4339.0" />
+      <point x="139.66666666666652" y="71.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.responseComminicates.VirtualObjectDtoResponse" target="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" relationship="TO_ONE">
+      <point x="79.25" y="-130.5" />
+      <point x="3507.016231631837" y="3525.0" />
+      <point x="2177.9199100928" y="3525.0" />
+      <point x="54.5" y="140.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.validators.NewVirtualObjectValidator" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="-98.0" y="-61.5" />
+      <point x="2955.266231631837" y="3645.0" />
+      <point x="3225.5239124129907" y="3645.0" />
+      <point x="3225.5239124129907" y="3605.0" />
+      <point x="8383.854166666666" y="3605.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Termometer" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="TO_ONE">
+      <point x="76.0" y="-162.0" />
+      <point x="2134.499999999999" y="508.0" />
+      <point x="2241.999999999999" y="508.0" />
+      <point x="2241.999999999999" y="418.0" />
+      <point x="4534.966014114487" y="418.0" />
+      <point x="4534.966014114487" y="358.0" />
+      <point x="2275.107245746324" y="358.0" />
+      <point x="61.33333333333337" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.repository.DeviceRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="2056.0" />
+      <point x="9113.854166666666" y="2056.0" />
+      <point x="9113.854166666666" y="1539.0" />
+      <point x="2732.249999999999" y="1539.0" />
+      <point x="2732.249999999999" y="1429.0" />
+      <point x="3378.7739124129907" y="1429.0" />
+      <point x="-57.5" y="60.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="5174.857245746324" y="4876.0" />
+      <point x="5174.857245746324" y="1439.0" />
+      <point x="2579.499999999999" y="1439.0" />
+      <point x="77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.exceptions.InvalidMacException" relationship="CREATE">
+      <point x="-63.333333333333485" y="-39.5" />
+      <point x="8853.145833333332" y="4509.0" />
+      <point x="9019.854166666666" y="4509.0" />
+      <point x="9019.854166666666" y="4409.0" />
+      <point x="6116.544745746324" y="4409.0" />
+      <point x="50.25" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.ChannelRepository" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.0" />
+      <point x="6090.294745746324" y="1122.0" />
+      <point x="7077.811576759468" y="1122.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1449.0" />
+      <point x="2278.749999999999" y="1449.0" />
+      <point x="2278.749999999999" y="1102.0" />
+      <point x="3709.945180781153" y="1102.0" />
+      <point x="3709.945180781153" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.rest.dto.DeviceDescriptionDto" relationship="DEPENDENCY">
+      <point x="52.375" y="-83.5" />
+      <point x="5457.232245746324" y="4509.0" />
+      <point x="5779.919745746324" y="4509.0" />
+      <point x="5779.919745746324" y="4339.0" />
+      <point x="5955.294745746324" y="4339.0" />
+      <point x="5955.294745746324" y="3645.0" />
+      <point x="6705.294745746324" y="3645.0" />
+      <point x="47.5" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="CREATE">
+      <point x="-179.0" y="-85.0" />
+      <point x="235.25324342613385" y="4896.0" />
+      <point x="102.5" y="4896.0" />
+      <point x="102.5" y="4886.0" />
+      <point x="0.0" y="4886.0" />
+      <point x="0.0" y="548.0" />
+      <point x="1438.5162316318365" y="548.0" />
+      <point x="1438.5162316318365" y="368.0" />
+      <point x="2152.4405790796573" y="368.0" />
+      <point x="-61.33333333333337" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1449.0" />
+      <point x="2667.499999999999" y="1449.0" />
+      <point x="2667.499999999999" y="1122.0" />
+      <point x="3875.445180781153" y="1122.0" />
+      <point x="3875.445180781153" y="468.0" />
+      <point x="8644.878079079657" y="468.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Device" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="TO_MANY">
+      <point x="-43.5" y="-162.0" />
+      <point x="7010.811576759468" y="398.0" />
+      <point x="2327.507680781153" y="398.0" />
+      <point x="2327.507680781153" y="348.0" />
+      <point x="5198.549347447819" y="348.0" />
+      <point x="-53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.TemperatureHistoryRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="2598.5865767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2036.0" />
+      <point x="1803.1412316318365" y="2036.0" />
+      <point x="1803.1412316318365" y="1529.0" />
+      <point x="1908.2662316318365" y="1529.0" />
+      <point x="1908.2662316318365" y="1499.0" />
+      <point x="1822.249999999999" y="1499.0" />
+      <point x="-73.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-196.5" />
+      <point x="2747.173912412991" y="1579.0" />
+      <point x="2436.266231631837" y="1579.0" />
+      <point x="2436.266231631837" y="1449.0" />
+      <point x="2721.749999999999" y="1449.0" />
+      <point x="2721.749999999999" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.exceptions.NoResponseFromSensorException" relationship="CREATE">
+      <point x="161.66666666666663" y="-116.5" />
+      <point x="12348.895833333332" y="4509.0" />
+      <point x="12264.479166666666" y="4509.0" />
+      <point x="12264.479166666666" y="4349.0" />
+      <point x="9405.979166666666" y="4349.0" />
+      <point x="76.5" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="1628.499999999999" y="4459.0" />
+      <point x="1617.999999999999" y="4459.0" />
+      <point x="1617.999999999999" y="3585.0" />
+      <point x="1650.249999999999" y="3585.0" />
+      <point x="1650.249999999999" y="1092.0" />
+      <point x="3688.945180781153" y="1092.0" />
+      <point x="3688.945180781153" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.ConfigHandler" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="111.66666666666674" y="-74.0" />
+      <point x="9320.020833333332" y="2572.0" />
+      <point x="9219.354166666666" y="2572.0" />
+      <point x="9219.354166666666" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.channel.TempSensorChannel" target="polsl.pl.IoTBE.common.MqttConfigValues" relationship="DEPENDENCY">
+      <point x="-98.0" y="-72.5" />
+      <point x="9325.854166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2046.0" />
+      <point x="9495.604166666666" y="2046.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.NoResponseFromSensorException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="9252.979166666666" y="4349.0" />
+      <point x="-76.5" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="DEPENDENCY">
+      <point x="54.5" y="-140.0" />
+      <point x="2177.9199100928" y="2562.0" />
+      <point x="2250.4199100928004" y="2562.0" />
+      <point x="2250.4199100928004" y="2552.0" />
+      <point x="2286.253243426134" y="2552.0" />
+      <point x="81.66666666666674" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.rest.dto.VirtualSensorInitDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="1379.999999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3565.0" />
+      <point x="1023.4999999999991" y="3565.0" />
+      <point x="0.0" y="207.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="1379.999999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3585.0" />
+      <point x="1444.499999999999" y="3585.0" />
+      <point x="1444.499999999999" y="1152.0" />
+      <point x="7685.162064965171" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.mapper.VirtualObjectMapper" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="4581.857245746324" y="4876.0" />
+      <point x="4581.857245746324" y="4489.0" />
+      <point x="4533.273912412991" y="4489.0" />
+      <point x="4533.273912412991" y="4469.0" />
+      <point x="1376.8243474478195" y="4469.0" />
+      <point x="113.75" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.ChannelTakenException" target="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" relationship="DEPENDENCY">
+      <point x="-110.33333333333326" y="-52.0" />
+      <point x="3257.2662316318365" y="3992.0" />
+      <point x="1856.3365767594678" y="3992.0" />
+      <point x="1856.3365767594678" y="3635.0" />
+      <point x="1390.499999999999" y="3635.0" />
+      <point x="1390.499999999999" y="3545.0" />
+      <point x="2068.9199100928" y="3545.0" />
+      <point x="-54.5" y="140.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="10933.070180781153" y="4339.0" />
+      <point x="10933.070180781153" y="3625.0" />
+      <point x="8383.854166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.service.DeviceService" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="7036.6875" y="4886.0" />
+      <point x="8868.979166666666" y="4886.0" />
+      <point x="-47.5" y="39.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="TO_ONE">
+      <point x="63.333333333333485" y="-39.5" />
+      <point x="8979.8125" y="4489.0" />
+      <point x="9868.354166666666" y="4489.0" />
+      <point x="9868.354166666666" y="4339.0" />
+      <point x="9878.854166666666" y="4339.0" />
+      <point x="9878.854166666666" y="1529.0" />
+      <point x="6177.294745746324" y="1529.0" />
+      <point x="87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="7571.128079079657" y="2036.0" />
+      <point x="7571.128079079657" y="1549.0" />
+      <point x="2742.7499999999986" y="1549.0" />
+      <point x="2742.749999999999" y="1419.0" />
+      <point x="6003.294745746324" y="1419.0" />
+      <point x="-87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeController" target="polsl.pl.IoTBE.RTree.RTreeService" relationship="TO_ONE">
+      <point x="0.0" y="-39.5" />
+      <point x="12479.87900232019" y="4896.0" />
+      <point x="12308.479166666666" y="4896.0" />
+      <point x="121.25" y="116.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDescriptionDto" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="TO_ONE">
+      <point x="-56.5" y="-141.5" />
+      <point x="2339.22456496517" y="2572.0" />
+      <point x="2240.4199100928004" y="2572.0" />
+      <point x="2240.4199100928004" y="2552.0" />
+      <point x="2204.5865767594673" y="2552.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeFactory" target="polsl.pl.IoTBE.RTree.MyRTreeNode" relationship="DEPENDENCY">
+      <point x="0.0" y="-83.5" />
+      <point x="10959.50400232019" y="1499.0" />
+      <point x="10964.50400232019" y="1499.0" />
+      <point x="10964.50400232019" y="1479.0" />
+      <point x="10636.37900232019" y="1479.0" />
+      <point x="59.0" y="86.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="179.0" y="-85.0" />
+      <point x="593.2532434261338" y="4896.0" />
+      <point x="5075.25" y="4896.0" />
+      <point x="5075.25" y="4876.0" />
+      <point x="5964.169745746324" y="4876.0" />
+      <point x="5964.169745746324" y="4429.0" />
+      <point x="6470.294745746324" y="4429.0" />
+      <point x="6470.294745746324" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.validators.NewDeviceValidator" target="polsl.pl.IoTBE.common.ChannelTypes" relationship="DEPENDENCY">
+      <point x="0.0" y="-50.5" />
+      <point x="9724.854166666666" y="4002.0" />
+      <point x="10118.354166666666" y="4002.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.RTree.SupportedMyRTreeNodeTypes" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="10256.229166666666" y="2056.0" />
+      <point x="11159.00400232019" y="2056.0" />
+      <point x="11159.00400232019" y="1509.0" />
+      <point x="10954.50400232019" y="1509.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.mapper.DeviceMapper" relationship="REALIZATION">
+      <point x="-52.375" y="-83.5" />
+      <point x="5352.482245746324" y="4439.0" />
+      <point x="6876.128079079657" y="4439.0" />
+      <point x="-139.66666666666652" y="71.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.rest.dto.PublishMessageDto" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="11242.104166666666" y="4339.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.InvalidMqttMessageException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="4883.857245746324" y="4349.0" />
+      <point x="4883.857245746324" y="2076.0" />
+      <point x="7644.378079079657" y="2076.0" />
+      <point x="-62.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.rest.dto.VirtualObjectInitDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="340.5" y="4886.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapper" target="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" relationship="DEPENDENCY">
+      <point x="-151.66666666666652" y="-49.0" />
+      <point x="1111.4076807811525" y="4002.0" />
+      <point x="1071.8243474478195" y="4002.0" />
+      <point x="1071.8243474478195" y="3992.0" />
+      <point x="1141.999999999999" y="3992.0" />
+      <point x="1141.999999999999" y="3635.0" />
+      <point x="1390.499999999999" y="3635.0" />
+      <point x="1390.499999999999" y="3545.0" />
+      <point x="2068.9199100928" y="3545.0" />
+      <point x="-54.5" y="140.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.mapper.VirtualObjectMapper" relationship="TO_ONE">
+      <point x="151.66666666666697" y="61.5" />
+      <point x="1531.666666666666" y="4002.0" />
+      <point x="1414.7410141144865" y="4002.0" />
+      <point x="151.66666666666697" y="-49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualObject" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="TO_ONE">
+      <point x="-95.0" y="-240.5" />
+      <point x="7531.828731631837" y="548.0" />
+      <point x="7365.170668986856" y="548.0" />
+      <point x="7365.170668986856" y="438.0" />
+      <point x="8114.128079079657" y="438.0" />
+      <point x="8114.128079079657" y="428.0" />
+      <point x="8555.544745746323" y="428.0" />
+      <point x="-89.33333333333333" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.validators.NewVirtualObjectValidator" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-98.0" y="-61.5" />
+      <point x="2955.266231631837" y="3645.0" />
+      <point x="3225.5239124129907" y="3645.0" />
+      <point x="3225.5239124129907" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Channel" target="polsl.pl.IoTBE.repository.dao.Device" relationship="TO_ONE">
+      <point x="-53.333333333333485" y="118.0" />
+      <point x="5198.549347447819" y="348.0" />
+      <point x="2327.507680781153" y="348.0" />
+      <point x="2327.507680781153" y="398.0" />
+      <point x="7010.811576759468" y="398.0" />
+      <point x="-43.5" y="-162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="1569.0" />
+      <point x="1923.7662316318365" y="1569.0" />
+      <point x="1923.7662316318365" y="1459.0" />
+      <point x="2424.499999999999" y="1459.0" />
+      <point x="-77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.RTree.TreeTypes" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="2116.0" />
+      <point x="10613.25400232019" y="2116.0" />
+      <point x="-45.75" y="50.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="DEPENDENCY">
+      <point x="52.375" y="-83.5" />
+      <point x="5457.232245746324" y="4509.0" />
+      <point x="5779.919745746324" y="4509.0" />
+      <point x="5779.919745746324" y="4339.0" />
+      <point x="5688.544745746324" y="4339.0" />
+      <point x="5688.544745746324" y="3992.0" />
+      <point x="5834.295668986856" y="3992.0" />
+      <point x="5834.295668986856" y="3972.0" />
+      <point x="5846.169745746324" y="3972.0" />
+      <point x="66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="0.0" y="-449.5" />
+      <point x="8345.078731631838" y="2482.0" />
+      <point x="8245.878079079657" y="2482.0" />
+      <point x="8245.878079079657" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.TermometerRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="7558.403514114487" y="2036.0" />
+      <point x="7558.403514114487" y="1569.0" />
+      <point x="1923.7662316318365" y="1569.0" />
+      <point x="1923.7662316318365" y="1459.0" />
+      <point x="2424.499999999999" y="1459.0" />
+      <point x="-77.5" y="38.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="1628.499999999999" y="4459.0" />
+      <point x="3781.7739124129907" y="4459.0" />
+      <point x="3781.7739124129907" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.ConfigHandler" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="CREATE">
+      <point x="0.0" y="-74.0" />
+      <point x="9208.354166666666" y="488.0" />
+      <point x="5236.716014114486" y="488.0" />
+      <point x="5236.716014114486" y="368.0" />
+      <point x="5251.882680781153" y="368.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.CalculationController" target="polsl.pl.IoTBE.service.CalculationService" relationship="TO_ONE">
+      <point x="2.8421709430404007E-14" y="-39.5" />
+      <point x="364.0" y="5486.0" />
+      <point x="289.5" y="5486.0" />
+      <point x="-79.5" y="105.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.MyRTreeNode" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="TO_ONE">
+      <point x="-78.66666666666669" y="-86.5" />
+      <point x="10498.712335653523" y="1192.0" />
+      <point x="10550.628079079659" y="1192.0" />
+      <point x="10550.628079079659" y="1132.0" />
+      <point x="7695.16206496517" y="1132.0" />
+      <point x="7695.16206496517" y="1102.0" />
+      <point x="7753.495398298504" y="1102.0" />
+      <point x="126.66666666666674" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.PublishController" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-96.75" y="-50.5" />
+      <point x="11424.354166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4509.0" />
+      <point x="11190.854166666666" y="4339.0" />
+      <point x="11631.604166666666" y="4339.0" />
+      <point x="11631.604166666666" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.StorageMenager" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="TO_MANY">
+      <point x="-352.33333333333326" y="-449.5" />
+      <point x="7992.745398298504" y="2572.0" />
+      <point x="7485.903514114487" y="2572.0" />
+      <point x="7485.903514114487" y="2492.0" />
+      <point x="7344.670668986856" y="2492.0" />
+      <point x="7344.670668986856" y="398.0" />
+      <point x="2327.507680781153" y="398.0" />
+      <point x="2327.507680781153" y="348.0" />
+      <point x="5198.549347447819" y="348.0" />
+      <point x="-53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-96.0" />
+      <point x="7701.653514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2126.0" />
+      <point x="7645.403514114487" y="2036.0" />
+      <point x="7843.128079079657" y="2036.0" />
+      <point x="7843.128079079657" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="1379.999999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3595.0" />
+      <point x="8383.854166666666" y="3595.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.service.DeviceService" relationship="TO_ONE">
+      <point x="133.66666666666652" y="-63.0" />
+      <point x="7170.354166666666" y="4896.0" />
+      <point x="9021.979166666666" y="4896.0" />
+      <point x="9021.979166666666" y="4886.0" />
+      <point x="8963.979166666666" y="4886.0" />
+      <point x="47.5" y="39.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapper" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-71.0" />
+      <point x="7015.794745746324" y="4002.0" />
+      <point x="7106.294745746324" y="4002.0" />
+      <point x="7106.294745746324" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapper" target="polsl.pl.IoTBE.rest.dto.VirtualSensorDto" relationship="DEPENDENCY">
+      <point x="-151.66666666666652" y="-49.0" />
+      <point x="1111.4076807811525" y="4002.0" />
+      <point x="1071.8243474478195" y="4002.0" />
+      <point x="1071.8243474478195" y="3992.0" />
+      <point x="801.5" y="3992.0" />
+      <point x="0.0" y="229.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="TO_ONE">
+      <point x="167.66666666666652" y="-94.5" />
+      <point x="2766.253243426134" y="2126.0" />
+      <point x="2933.766231631837" y="2126.0" />
+      <point x="2933.766231631837" y="2026.0" />
+      <point x="2990.673912412991" y="2026.0" />
+      <point x="2990.673912412991" y="1529.0" />
+      <point x="6177.294745746324" y="1529.0" />
+      <point x="87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.events.MeasurementDoneEventHandler" target="polsl.pl.IoTBE.events.MeasurementDoneEvent" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="1210.5" y="5261.0" />
+      <point x="1326.5" y="5261.0" />
+      <point x="-58.5" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDto" target="polsl.pl.IoTBE.rest.dto.TermometerDescriptionDto" relationship="TO_ONE">
+      <point x="-85.75" y="-141.5" />
+      <point x="2335.374999999999" y="3645.0" />
+      <point x="2442.22456496517" y="3645.0" />
+      <point x="2442.22456496517" y="3515.0" />
+      <point x="2339.22456496517" y="3515.0" />
+      <point x="-56.5" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.LocalizationRepository" target="polsl.pl.IoTBE.repository.dao.Localization" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="2387.173912412991" y="1519.0" />
+      <point x="1737.999999999999" y="1519.0" />
+      <point x="1737.999999999999" y="498.0" />
+      <point x="2317.257680781153" y="498.0" />
+      <point x="2317.257680781153" y="368.0" />
+      <point x="2213.7739124129907" y="368.0" />
+      <point x="0.0" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.ChannelTakenException" target="polsl.pl.IoTBE.responseComminicates.VirtualObjectDtoResponse" relationship="CREATE">
+      <point x="0.0" y="-52.0" />
+      <point x="3367.59956496517" y="4002.0" />
+      <point x="3322.0995649651704" y="4002.0" />
+      <point x="-105.66666666666652" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.rest.dto.LocalizationDto" relationship="CREATE">
+      <point x="-151.66666666666652" y="-61.5" />
+      <point x="1228.3333333333321" y="3645.0" />
+      <point x="1349.7410141144865" y="3645.0" />
+      <point x="1349.7410141144865" y="3615.0" />
+      <point x="1344.4910141144865" y="3615.0" />
+      <point x="1344.4910141144865" y="2552.0" />
+      <point x="2122.919910092801" y="2552.0" />
+      <point x="-81.66666666666674" y="96.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.domain.VirtualTermometer" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="1379.999999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3645.0" />
+      <point x="1411.499999999999" y="2126.0" />
+      <point x="1285.3243474478195" y="2126.0" />
+      <point x="1285.3243474478195" y="2046.0" />
+      <point x="2630.673912412991" y="2046.0" />
+      <point x="-116.5" y="196.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.rest.dto.EditVirtualObjectDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="557.0" y="4886.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapper" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-151.66666666666652" y="-49.0" />
+      <point x="1111.4076807811525" y="4002.0" />
+      <point x="1071.8243474478195" y="4002.0" />
+      <point x="1071.8243474478195" y="3992.0" />
+      <point x="920.9999999999991" y="3992.0" />
+      <point x="920.9999999999991" y="1152.0" />
+      <point x="7685.162064965171" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="2.8421709430404007E-14" y="-116.5" />
+      <point x="12187.229166666666" y="4339.0" />
+      <point x="12071.729166666666" y="4339.0" />
+      <point x="12071.729166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="CREATE">
+      <point x="-167.66666666666652" y="-94.5" />
+      <point x="2430.919910092801" y="2126.0" />
+      <point x="1710.749999999999" y="2126.0" />
+      <point x="1710.749999999999" y="2076.0" />
+      <point x="1672.249999999999" y="2076.0" />
+      <point x="1672.249999999999" y="1192.0" />
+      <point x="1455.499999999999" y="1192.0" />
+      <point x="1455.499999999999" y="1072.0" />
+      <point x="1982.499999999999" y="1072.0" />
+      <point x="-76.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.repository.dao.Channel" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4479.0" />
+      <point x="9581.354166666666" y="4479.0" />
+      <point x="9581.354166666666" y="2066.0" />
+      <point x="9724.604166666666" y="2066.0" />
+      <point x="9724.604166666666" y="478.0" />
+      <point x="8098.878079079657" y="478.0" />
+      <point x="8098.878079079657" y="368.0" />
+      <point x="5305.216014114487" y="368.0" />
+      <point x="53.333333333333485" y="118.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.storage.Dbloader" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="TO_ONE">
+      <point x="123.0" y="-96.0" />
+      <point x="7824.653514114487" y="2126.0" />
+      <point x="8204.378079079657" y="2126.0" />
+      <point x="8204.378079079657" y="1529.0" />
+      <point x="6177.294745746324" y="1529.0" />
+      <point x="87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.repository.dao.Termometer" target="polsl.pl.IoTBE.repository.dao.TemperatureHistory" relationship="TO_MANY">
+      <point x="76.0" y="-162.0" />
+      <point x="2134.499999999999" y="508.0" />
+      <point x="2241.999999999999" y="508.0" />
+      <point x="2241.999999999999" y="378.0" />
+      <point x="2070.4405790796577" y="378.0" />
+      <point x="62.66666666666663" y="163.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.DevicePresentException" target="polsl.pl.IoTBE.rest.dto.DeviceDto" relationship="TO_ONE">
+      <point x="-60.75" y="-141.5" />
+      <point x="5759.794745746324" y="4002.0" />
+      <point x="5678.544745746324" y="4002.0" />
+      <point x="5678.544745746324" y="3982.0" />
+      <point x="5713.669745746324" y="3982.0" />
+      <point x="-66.25" y="141.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.CalculationController" target="polsl.pl.IoTBE.service.CalculationService" relationship="DEPENDENCY">
+      <point x="156.66666666666663" y="-39.5" />
+      <point x="520.6666666666666" y="5486.0" />
+      <point x="466.7045454545455" y="5486.0" />
+      <point x="466.7045454545455" y="5476.0" />
+      <point x="448.5" y="5476.0" />
+      <point x="79.5" y="105.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.message.channel.TempSensor" relationship="REALIZATION">
+      <point x="93.20000000000005" y="-196.5" />
+      <point x="2840.3739124129906" y="1509.0" />
+      <point x="7910.878079079657" y="1509.0" />
+      <point x="-57.25" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mqtt.MqttController" target="polsl.pl.IoTBE.mqtt.MqttGateway" relationship="TO_ONE">
+      <point x="54.0" y="-50.5" />
+      <point x="10302.50400232019" y="1489.0" />
+      <point x="10300.75400232019" y="1489.0" />
+      <point x="52.25" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.DeviceService" target="polsl.pl.IoTBE.mqtt.ConfigHandler" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.5" />
+      <point x="8916.479166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4499.0" />
+      <point x="9030.354166666666" y="4479.0" />
+      <point x="9124.604166666666" y="4479.0" />
+      <point x="-83.75" y="74.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="1549.0" />
+      <point x="2742.749999999999" y="1549.0" />
+      <point x="2742.749999999999" y="1419.0" />
+      <point x="6003.294745746324" y="1419.0" />
+      <point x="-87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.dao.Device" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.0" />
+      <point x="414.25324342613385" y="4896.0" />
+      <point x="258.7662316318365" y="4896.0" />
+      <point x="258.7662316318365" y="4886.0" />
+      <point x="238.0" y="4886.0" />
+      <point x="238.0" y="1162.0" />
+      <point x="7077.811576759468" y="1162.0" />
+      <point x="7077.811576759468" y="1112.0" />
+      <point x="7054.311576759468" y="1112.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.DeviceController" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="7036.6875" y="4886.0" />
+      <point x="7932.729166666666" y="4886.0" />
+      <point x="7932.729166666666" y="4479.0" />
+      <point x="9009.354166666666" y="4479.0" />
+      <point x="9009.354166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3625.0" />
+      <point x="8383.854166666666" y="3585.0" />
+      <point x="8080.828731631837" y="3585.0" />
+      <point x="-264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.handler.MqttMessageHandler" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-59.0" y="-86.5" />
+      <point x="8347.378079079657" y="2126.0" />
+      <point x="8256.878079079657" y="2126.0" />
+      <point x="8256.878079079657" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeService" target="polsl.pl.IoTBE.RTree.RecordList" relationship="DEPENDENCY">
+      <point x="-161.66666666666663" y="-116.5" />
+      <point x="12025.5625" y="4509.0" />
+      <point x="12060.729166666666" y="4509.0" />
+      <point x="12060.729166666666" y="1092.0" />
+      <point x="10631.961412412991" y="1092.0" />
+      <point x="61.33333333333337" y="130.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.service.VirtualObjectService" target="polsl.pl.IoTBE.exceptions.NoChannelForGivenMacException" relationship="CREATE">
+      <point x="-132.33333333333348" y="-39.5" />
+      <point x="1496.166666666666" y="4509.0" />
+      <point x="1138.4239124129908" y="4509.0" />
+      <point x="1138.4239124129908" y="4499.0" />
+      <point x="4160.273912412991" y="4499.0" />
+      <point x="-75.0" y="74.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.VirtualObjectController" target="polsl.pl.IoTBE.repository.dao.Termometer" relationship="CREATE">
+      <point x="-179.0" y="-85.0" />
+      <point x="235.25324342613385" y="4896.0" />
+      <point x="102.5" y="4896.0" />
+      <point x="102.5" y="4886.0" />
+      <point x="205.0" y="4886.0" />
+      <point x="205.0" y="1192.0" />
+      <point x="1455.499999999999" y="1192.0" />
+      <point x="1455.499999999999" y="1072.0" />
+      <point x="1982.499999999999" y="1072.0" />
+      <point x="-76.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.exceptions.handler.MyExceptionHandler" target="polsl.pl.IoTBE.exceptions.InvalidTypeForChannelException" relationship="DEPENDENCY">
+      <point x="-143.0" y="-149.5" />
+      <point x="4735.357245746324" y="4509.0" />
+      <point x="4820.757680781153" y="4509.0" />
+      <point x="4820.757680781153" y="4349.0" />
+      <point x="4604.273912412991" y="4349.0" />
+      <point x="66.0" y="52.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.Controller" target="polsl.pl.IoTBE.repository.ChannelRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="2598.5865767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2116.0" />
+      <point x="2097.9615767594673" y="2036.0" />
+      <point x="2108.9615767594673" y="2036.0" />
+      <point x="2108.9615767594673" y="1549.0" />
+      <point x="2742.749999999999" y="1549.0" />
+      <point x="2742.749999999999" y="1419.0" />
+      <point x="6003.294745746324" y="1419.0" />
+      <point x="-87.0" y="49.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.storage.StorageMenager" relationship="TO_ONE">
+      <point x="151.66666666666652" y="-61.5" />
+      <point x="1531.666666666666" y="3615.0" />
+      <point x="8393.854166666666" y="3615.0" />
+      <point x="8393.854166666666" y="3605.0" />
+      <point x="8609.328731631838" y="3605.0" />
+      <point x="264.25" y="449.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.VirtualObjectMapperDecorator" target="polsl.pl.IoTBE.rest.dto.VirtualObjectDto" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="1379.999999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3645.0" />
+      <point x="1411.499999999999" y="3555.0" />
+      <point x="1390.499999999999" y="3555.0" />
+      <point x="1390.499999999999" y="3545.0" />
+      <point x="2068.9199100928" y="3545.0" />
+      <point x="-54.5" y="140.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.common.RTreeConfigValues" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="10256.229166666666" y="2056.0" />
+      <point x="10462.00400232019" y="2056.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.repository.TemperatureHistoryRepository" relationship="TO_ONE">
+      <point x="186.39999999999998" y="-196.5" />
+      <point x="2933.573912412991" y="1579.0" />
+      <point x="2884.999999999999" y="1579.0" />
+      <point x="2884.999999999999" y="1469.0" />
+      <point x="1945.7662316318365" y="1469.0" />
+      <point x="1945.7662316318365" y="1449.0" />
+      <point x="1969.749999999999" y="1449.0" />
+      <point x="73.75" y="27.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.message.channel.TempSensorChannel" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="DEPENDENCY">
+      <point x="-98.0" y="-72.5" />
+      <point x="9325.854166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2126.0" />
+      <point x="9598.104166666666" y="2036.0" />
+      <point x="9603.354166666666" y="2036.0" />
+      <point x="9603.354166666666" y="1152.0" />
+      <point x="7685.16206496517" y="1152.0" />
+      <point x="7685.16206496517" y="1102.0" />
+      <point x="7626.828731631837" y="1102.0" />
+      <point x="0.0" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.RTree.RTreeManager" target="polsl.pl.IoTBE.RTree.RTreeFactory" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="10256.229166666666" y="2056.0" />
+      <point x="10865.00400232019" y="2056.0" />
+      <point x="-94.5" y="83.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" target="polsl.pl.IoTBE.rest.dto.ChannelDto" relationship="DEPENDENCY">
+      <point x="52.375" y="-83.5" />
+      <point x="5457.232245746324" y="4509.0" />
+      <point x="5779.919745746324" y="4509.0" />
+      <point x="5779.919745746324" y="4339.0" />
+      <point x="5634.919745746324" y="4339.0" />
+      <point x="5634.919745746324" y="3635.0" />
+      <point x="6451.9375" y="3635.0" />
+      <point x="6451.9375" y="3545.0" />
+      <point x="5494.0" y="3545.0" />
+      <point x="46.0" y="119.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.CalculationController" target="polsl.pl.IoTBE.rest.dto.CalculationResultsDto" relationship="CREATE">
+      <point x="-156.66666666666663" y="-39.5" />
+      <point x="207.33333333333337" y="5486.0" />
+      <point x="95.0" y="5486.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualTermometer" target="polsl.pl.IoTBE.domain.VirtualObject" relationship="GENERALIZATION">
+      <point x="-93.19999999999993" y="-196.5" />
+      <point x="2653.973912412991" y="1479.0" />
+      <point x="2236.999999999999" y="1479.0" />
+      <point x="2236.999999999999" y="1132.0" />
+      <point x="7500.16206496517" y="1132.0" />
+      <point x="-126.66666666666669" y="240.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.domain.VirtualObject" target="polsl.pl.IoTBE.message.channel.VirtualChannel" relationship="DEPENDENCY">
+      <point x="95.0" y="-240.5" />
+      <point x="7721.828731631837" y="548.0" />
+      <point x="7647.061576759467" y="548.0" />
+      <point x="7647.061576759467" y="458.0" />
+      <point x="8644.878079079657" y="458.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.mapper.DeviceMapper" target="polsl.pl.IoTBE.mapper.DeviceMapperDecorator" relationship="DEPENDENCY">
+      <point x="0.0" y="71.0" />
+      <point x="7015.794745746324" y="4449.0" />
+      <point x="5779.919745746324" y="4449.0" />
+      <point x="5779.919745746324" y="4509.0" />
+      <point x="5457.232245746324" y="4509.0" />
+      <point x="52.375" y="-83.5" />
+    </edge>
+    <edge source="polsl.pl.IoTBE.rest.dto.TermometerDto" target="polsl.pl.IoTBE.rest.dto.TermometerDescriptionDto" relationship="DEPENDENCY">
+      <point x="85.75" y="-141.5" />
+      <point x="2506.874999999999" y="3645.0" />
+      <point x="2751.516231631837" y="3645.0" />
+      <point x="2751.516231631837" y="3535.0" />
+      <point x="2452.22456496517" y="3535.0" />
+      <point x="56.5" y="141.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.1" showDependencies="true" x="5228.0" y="3951.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

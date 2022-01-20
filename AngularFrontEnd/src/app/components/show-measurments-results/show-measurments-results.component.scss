@@ -1,0 +1,21 @@
+.my-card{
+  max-width: 1000px !important;
+  margin: auto !important;
+
+}
+:host ::ng-deep .p-tabview-nav{
+  justify-content: center !important;
+  border: none;
+  background: none;
+}
+
+:host ::ng-deep .card{
+  border: none;
+  max-width: 800px !important;
+  margin: auto !important;
+  padding-top: 50px;
+  background: none;
+}
+span{
+  padding-left: 10px;
+}

@@ -1,0 +1,24 @@
+server:
+  port: 9069
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/localDB'
+    username: user
+    password: example
+    initialization-mode: always
+    driverClassName: 'org.postgresql.Driver'
+  jpa:
+    packages-to-scan:
+      - 'polsl.pl.IoTBE.repository.dao'
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: validate
+        show_sql: true
+
+  output:
+  ansi:
+    enabled: DETECT
+

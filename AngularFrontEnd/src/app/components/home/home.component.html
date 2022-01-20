@@ -1,0 +1,78 @@
+<hr>
+<div class="RectangleDtoCard">
+  <div class="form-group">
+    <label for="lcx">Left corner X coordinate</label>
+    <input
+    required
+    #lcx="ngModel"
+    [(ngModel)]="bounds.west"
+    name ="lcx"
+    id="lcx"
+    type="number"
+    step = "0.000001"
+    class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="lcy">Left corner Y coordinate</label>
+    <input
+    required
+    #lcy="ngModel"
+    [(ngModel)]="bounds.north"
+    name ="lcy"
+    id="lcy"
+    type="number"
+    step = "0.000001"
+    class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="rcx">Right corner X coordinate</label>
+    <input
+    required
+    #rcx="ngModel"
+    [(ngModel)]="bounds.east"
+    name ="rcx"
+    id="rcx"
+    type="number"
+    step = "0.000001"
+    class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="rcy">Right corner Y coordinate</label>
+    <input
+    required
+    #rcy="ngModel"
+    [(ngModel)]="bounds.south"
+    value = "bounds.south"
+    name ="rcy"
+    id="rcy"
+    type="number"
+    step = "0.000001"
+    class="form-control">
+  </div>
+
+  <div class="button-container">
+    <button pButton pRipple
+    type="button"
+    label="Show"
+    class="p-button-rounded show-button "
+    icon="far fa-eye"
+    iconPos="right"
+    (click)="onRectangleShow(lcx.value, lcy.value, rcx.value, rcy.value)"
+    ></button>
+
+
+    <button pButton pRipple
+    type="button"
+    label="Submit"
+    class="p-button-rounded submit-button"
+    icon="fas fa-paper-plane"
+    iconPos="right"
+    (click)="onRectangleSubmit()"
+    ></button>
+  </div>
+
+</div>
+  <p-gmap [options]="options" [overlays]="overlays" [style]="{'margin-left':'20%', 'border-radius': '15px','width':'75%','height':'600px'}" ></p-gmap>
+<hr>
+

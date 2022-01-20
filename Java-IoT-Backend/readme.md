@@ -1,0 +1,3 @@
+
+# Wymagane zasoby 
+moj komputer

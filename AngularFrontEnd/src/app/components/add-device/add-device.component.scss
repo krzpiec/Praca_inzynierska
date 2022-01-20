@@ -1,0 +1,14 @@
+.container{
+  margin-top: 5%;
+  display: block;
+
+}
+:host ::ng-deep .form-control{
+  background-color: #282828 !important;
+  color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid rgb(238, 96, 2);
+}
+:host ::ng-deep .p-tabview .p-tabview-panels{
+  color: #ffffff;
+}

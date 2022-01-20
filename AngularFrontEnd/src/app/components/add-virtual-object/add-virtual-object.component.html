@@ -1,0 +1,39 @@
+<div class="container">
+  <form #addDeviceForm="ngForm" (ngSubmit)="onSubmit()" novalidate >
+    <div class="form-group">
+      <label for="macAdr" style="color:#ffffff">Mac address</label>
+      <input
+      required
+      #macAdr = "ngModel"
+      [(ngModel)]="virtualObjectInitDto.macAdr"
+      [class.is-invalid]="macAdr.invalid && macAdr.touched"
+      name ="macAdr"
+      id="macAdr"
+      type="text"
+      class="form-control">
+    </div>
+    <small class="text-danger" [class.d-none]="macAdr.valid || macAdr.untouched">MAC address is required</small>
+    <div class="form-group">
+      <label for="channelNumber" style="color:#ffffff">Channel number</label>
+      <input
+      required
+      #channelNumber="ngModel"
+      [(ngModel)]="virtualObjectInitDto.channelNumber"
+      [class.is-invalid]="channelNumber.invalid && channelNumber.touched"
+      name ="channelNumber"
+      id="channelNumber"
+      type="number"
+      class="form-control">
+    </div>
+    <small class="text-danger" [class.d-none]="channelNumber.valid || channelNumber.untouched">Description is required</small>
+    <div class="form-group">
+      <label for="virtualDeviceType" style="color:#ffffff">Virtual device type</label>
+      <select class = "custom-select"  name ="type" [(ngModel)]="virtualObjectInitDto.type">
+        <option style = "color:#ffffff" value=""></option>
+        <option style = "color:#ffffff" *ngFor="let type of types">{{type}}</option>
+      </select>
+    </div>
+    <hr>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</div>

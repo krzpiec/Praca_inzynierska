@@ -1,0 +1,45 @@
+<div class="my-card">
+<p-table #DeviceTable [value]="deviceDtoList" [rowHover]="true" [paginator]="true" [rows]="5" sortMode="multiple" [globalFilterFields]="['deviceDescription.macAdr', 'deviceDescription.friendlyName']">
+  <ng-template pTemplate="caption">
+    <div class="table-header" >
+        <span class="p-input-icon-right">
+
+            <input class = "input-search" pInputText type="text" (input)="DeviceTable.filterGlobal($any($event.target).value, 'contains')"  />
+            <i class="pi pi-search"></i>
+        </span>
+        <button routerLink="/manageDevices/add" pButton type="button" class="add-button" label="Add new Device" >
+        </button>
+    </div>
+    </ng-template>
+  <ng-template pTemplate="header">
+      <tr class="ListHeaders">
+        <th class="header-field" [ngStyle]="{'width': '25%'}" pSortableColumn="deviceDescription.macAdr">Mac adress<p-sortIcon style="color: #000000;" field="macAdr"></p-sortIcon></th>
+        <th class="header-field" [ngStyle]="{'width': '25%'}" pSortableColumn="deviceDescription.friendlyName">Friendly Name<p-sortIcon field="friendlyName"></p-sortIcon></th>
+        <th class="header-field" [ngStyle]="{'width': '15%'}" pSortableColumn="Added channels">Channels<p-sortIcon field="channelDtoList.length"></p-sortIcon></th>
+        <th class="header-field"  [ngStyle]="{'width': '25%'}" pSortableColumn="createTime">Create time<p-sortIcon field="createTime"></p-sortIcon></th>
+        <th [ngStyle]="{'width': '10%'}">
+
+        </th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-device>
+      <tr class="p-selectable-row content-row">
+        <td>
+          {{device.deviceDescription.macAdr}}
+      </td>
+      <td>
+        {{device.deviceDescription.friendlyName}}
+    </td>
+    <td>
+      {{device.channelDtoList.length}}
+    </td>
+    <td>
+      {{device.createTime | date: 'medium'}}
+    </td>
+    <td style="text-align: center">
+      <button [routerLink]="['/manageDevices', device.deviceDescription.macAdr]" pButton type="button" class="settings-button" icon="pi pi-cog"></button>
+  </td>
+      </tr>
+  </ng-template>
+</p-table>
+</div>

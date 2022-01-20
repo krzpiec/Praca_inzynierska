@@ -1,0 +1,21 @@
+
+.table-header
+{
+  background-color:   rgb(238, 96, 2);
+  color: black;
+}
+.my-card{
+  max-width: 1000px !important;
+  margin: auto !important;
+  padding-top: 5vw;
+}
+:host ::ng-deep .p-datatable-wrapper{
+  border: 1px solid rgb(143, 136, 136);
+}
+
+.button-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
